@@ -17,7 +17,9 @@
             "group": "VoxDash",
             "pages": [
               "wiki/bulk-upload",
-              "wiki/multi-bulk-upload"
+              "wiki/multi-bulk-upload",
+              "wiki/data-entry",
+              
           
             ]
           },
