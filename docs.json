@@ -14,6 +14,13 @@
         "tab": "VoxDash Wiki",
         "groups": [
           {
+            "group": "Getting Started",
+            "pages": [
+              "wiki/getting-started-data-user",
+              "wiki/getting-started-data-creator"
+            ]
+          },
+          {
             "group": "Survey Questions",
             "pages": [
               "wiki/question-list",
