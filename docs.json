@@ -14,27 +14,38 @@
         "tab": "VoxDash Wiki",
         "groups": [
           {
-            "group": "Product Overview",
+            "group": "Survey Questions",
             "pages": [
-              "wiki/homepage-setup",
-              "wiki/public-access",
-              "wiki/whats-organizarion"
+              "wiki/question-list",
+              "wiki/question-page",
+              "wiki/map-visualization-question-page"
             ]
           },
           {
-            "group": "SaaS & Billing",
+            "group": "Maps & Visualization",
             "pages": [
-              "wiki/data-panel-saas-usage",
-              "wiki/purchase-new-plan",
-              "wiki/purchase-new-addon"
+              "wiki/map",
+              "wiki/drilldown-map",
+              "wiki/trend"
+            ]
+          },
+          {
+            "group": "Data Governance",
+            "pages": [
+              "wiki/user-management",
+              "wiki/user-groups",
+              "wiki/admin-management",
+              "wiki/security-settings",
+              "wiki/entity-access",
+              "wiki/terms-and-conditions",
+              "wiki/public-access"
             ]
           },
           {
             "group": "Projects & Exploration",
             "pages": [
               "wiki/dashboard",
-              "wiki/advance-search",
-              "wiki/trend",
+              "wiki/advanced-search",
               "wiki/data-project-list",
               "wiki/data-project-page",
               "wiki/data-profile"
@@ -53,23 +64,21 @@
             ]
           },
           {
-            "group": "Users & Security",
+            "group": "SaaS & Billing",
             "pages": [
-              "wiki/user-management",
-              "wiki/user-group",
-              "wiki/admin-management",
-              "wiki/security-setting",
-              "wiki/entity-access"
+              "wiki/data-panel-saas-usage",
+              "wiki/purchase-new-plan",
+              "wiki/purchase-new-addon"
             ]
           },
           {
             "group": "Vendors & Individuals",
             "pages": [
-              "wiki/vendors-list",
+              "wiki/vendor-list",
               "wiki/vendor-page",
               "wiki/create-vendor-for-organization",
               "wiki/choose-vendor-from-header",
-              "wiki/roles-of-vendor-individual",
+              "wiki/vendor-individual-roles",
               "wiki/vendor",
               "wiki/individual-list",
               "wiki/individual-page",
@@ -78,31 +87,22 @@
             ]
           },
           {
-            "group": "Maps & Visualization",
+            "group": "Product Overview",
             "pages": [
-              "wiki/map",
-              "wiki/drilldown-map"
-            ]
-          },
-          {
-            "group": "Survey Questions",
-            "pages": [
-              "wiki/quetion-list",
-              "wiki/question-page",
-              "wiki/Map-visualization-question-page"
+              "wiki/homepage-setup",
+              "wiki/whats-organization"
             ]
           },
           {
             "group": "AI Assistant",
             "pages": [
               "wiki/ai-chat",
-              "wiki/ai-openended"
+              "wiki/ai-open-ended"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "wiki/terms-and-condition",
               "wiki/voxdash-public-archive"
             ]
           }
