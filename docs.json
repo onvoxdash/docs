@@ -14,72 +14,108 @@
         "tab": "VoxDash Wiki",
         "groups": [
           {
-            "group": "VoxDash",
+            "group": "Product Overview",
             "pages": [
-              "wiki/bulk-upload",
-              "wiki/multi-bulk-upload",
-              "wiki/data-entry",
-              "wiki/spss-data-entry",
-              "wiki/vendor",
-              "wiki/individual",
-              "wiki/terms-and-condition",
+              "wiki/homepage-setup",
               "wiki/public-access",
-              "wiki/entity-access",
-              "wiki/map",
+              "wiki/whats-organizarion"
+            ]
+          },
+          {
+            "group": "SaaS & Billing",
+            "pages": [
+              "wiki/data-panel-saas-usage",
+              "wiki/purchase-new-plan",
+              "wiki/purchase-new-addon"
+            ]
+          },
+          {
+            "group": "Projects & Exploration",
+            "pages": [
+              "wiki/dashboard",
+              "wiki/advance-search",
               "wiki/trend",
               "wiki/data-project-list",
               "wiki/data-project-page",
+              "wiki/data-profile"
+            ]
+          },
+          {
+            "group": "Data Import & SPSS",
+            "pages": [
+              "wiki/data-entry",
+              "wiki/bulk-upload",
+              "wiki/multi-bulk-upload",
+              "wiki/sample-file",
+              "wiki/spss",
+              "wiki/spss-data-entry",
+              "wiki/setup-map-spss"
+            ]
+          },
+          {
+            "group": "Users & Security",
+            "pages": [
+              "wiki/user-management",
+              "wiki/user-group",
+              "wiki/admin-management",
+              "wiki/security-setting",
+              "wiki/entity-access"
+            ]
+          },
+          {
+            "group": "Vendors & Individuals",
+            "pages": [
               "wiki/vendors-list",
               "wiki/vendor-page",
-              "wiki/individual-list",
-              "wiki/individual-page",
-              "wiki/question-list",
-              "wiki/question-page",
-              "wiki/spss",
-              "wiki/setup-map-spss",
-              "wiki/roles-of-vendor-individual",
-              "wiki/admin-management",
-              "wiki/advance-search",
-              "wiki/dashboard",
-              "wiki/data-profile",
-              "wiki/sample-file",
-              "wiki/user-group",
-              "wiki/user-management",
-              "wiki/purchase-new-plan",
-              "wiki/purchase-new-addon",
-              "wiki/data-panel-saas-usage",
-              "wiki/ai-chat",
-              "wiki/ai-openended",
-              "wiki/drilldown-map",
-              "wiki/individual-page-of-each-user",
-              "wiki/security-setting",
-              "wiki/homepage-setup",
               "wiki/create-vendor-for-organization",
               "wiki/choose-vendor-from-header",
-              "wiki/whats-organizarion",
-              "wiki/voxdash-public-archive"]
+              "wiki/roles-of-vendor-individual",
+              "wiki/vendor",
+              "wiki/individual-list",
+              "wiki/individual-page",
+              "wiki/individual-page-of-each-user",
+              "wiki/individual"
+            ]
+          },
+          {
+            "group": "Maps & Visualization",
+            "pages": [
+              "wiki/map",
+              "wiki/drilldown-map"
+            ]
+          },
+          {
+            "group": "Survey Questions",
+            "pages": [
+              "wiki/quetion-list",
+              "wiki/question-page",
+              "wiki/Map-visualization-question-page"
+            ]
+          },
+          {
+            "group": "AI Assistant",
+            "pages": [
+              "wiki/ai-chat",
+              "wiki/ai-openended"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "wiki/terms-and-condition",
+              "wiki/voxdash-public-archive"
+            ]
           }
         ]
       }
     ]
-   
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    "links": []
   },
   "contextual": {
     "options": [
