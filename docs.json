@@ -59,16 +59,17 @@
             ]
           },
           {
-            "group": "Data Import & SPSS",
+            "group": "Data Management",
             "pages": [
-              "wiki/data-entry",
-              "wiki/bulk-upload",
-              "wiki/multi-bulk-upload",
-              "wiki/placeholder",
-              "wiki/sample-file",
-              "wiki/spss",
-              "wiki/spss-data-entry",
-              "wiki/setup-map-spss"
+              "wiki/Data Management/Bulk-File-Upload",
+              "wiki/Data Management/Multi-Folder-Upload",
+              "wiki/Data Management/Data-Entry-Overview",
+              "wiki/Data Management/SPSS-Data-Entry-Guide",
+              "wiki/Data Management/Working-with-SPSS-Files",
+              "wiki/Data Management/Data-Profile-Guide",
+              "wiki/Data Management/SPSS-Variable-Mapping",
+              "wiki/Data Management/Add-Sample-File",
+              "wiki/Data Management/Add-Placeholder-File"
             ]
           },
           {
