@@ -49,16 +49,6 @@
             ]
           },
           {
-            "group": "Projects & Exploration",
-            "pages": [
-              "wiki/dashboard",
-              "wiki/advanced-search",
-              "wiki/data-project-list",
-              "wiki/data-project-page",
-              "wiki/data-profile"
-            ]
-          },
-          {
             "group": "Uploads & File Management",
             "pages": [
               "wiki/Data-Management/Bulk-File-Upload",
@@ -75,6 +65,15 @@
               "wiki/SPSS-&-Data-Entry/Working-with-SPSS-Files",
               "wiki/SPSS-&-Data-Entry/Data-Profile-Guide",
               "wiki/SPSS-&-Data-Entry/SPSS-Variable-Mapping"
+            ]
+          },
+          {
+            "group": "Data Projects",
+            "pages": [
+              "wiki/Data-Projects/Voxdash-Public-Archive-Overview",
+              "wiki/Data-Projects/Data-Project-List",
+              "wiki/Data-Projects/Data-Project-Overrview",
+              "wiki/Data-Projects/Trend-Analysis"
             ]
           },
           {
