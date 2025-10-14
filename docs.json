@@ -21,22 +21,6 @@
             ]
           },
           {
-            "group": "Survey Questions",
-            "pages": [
-              "wiki/question-list",
-              "wiki/question-page",
-              "wiki/map-visualization-question-page"
-            ]
-          },
-          {
-            "group": "Maps & Visualization",
-            "pages": [
-              "wiki/map",
-              "wiki/drilldown-map",
-              "wiki/trend"
-            ]
-          },
-          {
             "group": "Data Governance",
             "pages": [
               "wiki/user-management",
@@ -77,14 +61,6 @@
             ]
           },
           {
-            "group": "SaaS & Billing",
-            "pages": [
-              "wiki/data-panel-saas-usage",
-              "wiki/purchase-new-plan",
-              "wiki/purchase-new-addon"
-            ]
-          },
-          {
             "group": "Vendors & Individuals",
             "pages": [
               "wiki/Vendors-&-Individuals/Add-A-New-Vendor",
@@ -98,25 +74,51 @@
             ]
           },
           {
-            "group": "Product Overview",
+            "group": "Survey Questions",
             "pages": [
-              "wiki/homepage-setup",
-              "wiki/whats-organization"
+              "wiki/Survey-Questions/Survey-Questions-List",
+              "wiki/Survey-Questions/Question-Page-Overview"
+            ]
+          },
+          {
+            "group": "Maps & Visualization",
+            "pages": [
+              "wiki/Maps-&-Visualizations/Map-Overview",
+              "wiki/Maps-&-Visualizations/Drilldown-Map-Examples",
+              "wiki/Maps-&-Visualizations/Map-Visualization-Guide"
+            ]
+          },
+          {
+            "group": "Reports & Dashboards",
+            "pages": [
+              "wiki/Reports-&-Dashboards/Data-Panel-Dashboard"
             ]
           },
           {
             "group": "AI Assistant",
             "pages": [
-              "wiki/ai-chat",
-              "wiki/ai-open-ended"
+              "wiki/AI-&-Analysis/AI-Assisted-Data-Chat",
+              "wiki/AI-&-Analysis/AI-Open-Ended-Analysis"
             ]
           },
           {
-            "group": "Reference",
+            "group": "SaaS & Billing",
             "pages": [
-              "wiki/voxdash-public-archive"
+              "wiki/data-panel-saas-usage",
+              "wiki/purchase-new-plan",
+              "wiki/purchase-new-addon"
+            ]
+          },
+          
+          {
+            "group": "Product Overview",
+            "pages": [
+              "wiki/homepage-setup",
+              "wiki/whats-organization"
             ]
           }
+          
+          
         ]
       }
     ]
