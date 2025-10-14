@@ -87,16 +87,14 @@
           {
             "group": "Vendors & Individuals",
             "pages": [
-              "wiki/vendor-list",
-              "wiki/vendor-page",
-              "wiki/create-vendor-for-organization",
-              "wiki/choose-vendor-from-header",
-              "wiki/vendor-individual-roles",
-              "wiki/vendor",
-              "wiki/individual-list",
-              "wiki/individual-page",
-              "wiki/individual-page-of-each-user",
-              "wiki/individual"
+              "wiki/Vendors-&-Individuals/Add-A-New-Vendor",
+              "wiki/Vendors-&-Individuals/Vendors-Directory",
+              "wiki/Vendors-&-Individuals/Vendor-Page-Overview",
+              "wiki/Vendors-&-Individuals/Add-A-New-Individual",
+              "wiki/Vendors-&-Individuals/Individuals-Directory",
+              "wiki/Vendors-&-Individuals/Individual-Page-Overview",
+              "wiki/Vendors-&-Individuals/User-Profile-Page",
+              "wiki/Vendors-&-Individuals/Vendors-vs-Individuals"
             ]
           },
           {
