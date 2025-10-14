@@ -16,8 +16,8 @@
           {
             "group": "Getting Started",
             "pages": [
-              "wiki/getting-started-data-user",
-              "wiki/getting-started-data-creator"
+              "wiki/Getting-Started/Getting-Started-Data-User",
+              "wiki/Getting-Started/Getting-Started-Data-Creator"
             ]
           },
           {
@@ -57,7 +57,8 @@
               "wiki/Data-Projects/Voxdash-Public-Archive-Overview",
               "wiki/Data-Projects/Data-Project-List",
               "wiki/Data-Projects/Data-Project-Overrview",
-              "wiki/Data-Projects/Trend-Analysis"
+              "wiki/Data-Projects/Trend-Analysis",
+              "wiki/Data-Projects/Advanced-Search"
             ]
           },
           {
@@ -116,23 +117,30 @@
             ]
           },
           {
-            "group": "SaaS & Billing",
+            "group": "User Management",
             "pages": [
-              "wiki/data-panel-saas-usage",
-              "wiki/purchase-new-plan",
-              "wiki/purchase-new-addon"
+              "wiki/User-Management/User-Management",
+              "wiki/User-Management/Admin-Management",
+              "wiki/User-Management/Create-&-Manage-User-Groups"
             ]
           },
-          
           {
-            "group": "Product Overview",
+            "group": "Organization Setup",
             "pages": [
-              "wiki/homepage-setup",
-              "wiki/whats-organization"
+              "wiki/Organization-Setup/Understanding-Organizations",
+              "wiki/Organization-Setup/Add-Vendor-to-Organization",
+              "wiki/Organization-Setup/Organization-Home-Page-Setup",
+              "wiki/Organization-Setup/Switch-Active-Vendor"
+            ]
+          },
+          {
+            "group": "Billing, Subscriptions & System Usage",
+            "pages": [
+              "wiki/Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
+              "wiki/Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
+              "wiki/Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
             ]
           }
-          
-          
         ]
       }
     ]
