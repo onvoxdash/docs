@@ -102,6 +102,20 @@
             ]
           },
           {
+            "group": "Terms & Legal",
+            "pages": [
+              "wiki/Terms-&-Legal/Terms-&-Contract-Management"
+            ]
+          },
+          {
+            "group": "Access Controls",
+            "pages": [
+              "wiki/Access-Controls/Public-Access-Settings",
+              "wiki/Access-Controls/Entity-Level-Access-Control",
+              "wiki/Access-Controls/Security-&-Permissions"
+            ]
+          },
+          {
             "group": "SaaS & Billing",
             "pages": [
               "wiki/data-panel-saas-usage",
