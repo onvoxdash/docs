@@ -21,18 +21,6 @@
             ]
           },
           {
-            "group": "Data Governance",
-            "pages": [
-              "wiki/user-management",
-              "wiki/user-groups",
-              "wiki/admin-management",
-              "wiki/security-settings",
-              "wiki/entity-access",
-              "wiki/terms-and-conditions",
-              "wiki/public-access"
-            ]
-          },
-          {
             "group": "Uploads & File Management",
             "pages": [
               "wiki/Data-Management/Bulk-File-Upload",
