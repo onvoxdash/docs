@@ -16,117 +16,117 @@
           {
             "group": "Getting Started",
             "pages": [
-              "wiki/Getting-Started/Getting-Started-Data-User",
-              "wiki/Getting-Started/Getting-Started-Data-Creator"
+              "Getting-Started/Getting-Started-Data-User",
+              "Getting-Started/Getting-Started-Data-Creator"
             ]
           },
           {
             "group": "Uploads & File Management",
             "pages": [
-              "wiki/Data-Management/Bulk-File-Upload",
-              "wiki/Data-Management/Multi-Folder-Upload",
-              "wiki/Data-Management/Sample-Files",
-              "wiki/Data-Management/Placeholder-Files"
+              "Data-Management/Bulk-File-Upload",
+              "Data-Management/Multi-Folder-Upload",
+              "Data-Management/Sample-Files",
+              "Data-Management/Placeholder-Files"
             ]
           },
           {
             "group": "SPSS & Data Entry",
             "pages": [
-              "wiki/SPSS-&-Data-Entry/Data-Entry-Overview",
-              "wiki/SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
-              "wiki/SPSS-&-Data-Entry/Working-with-SPSS-Files",
-              "wiki/SPSS-&-Data-Entry/Data-Profile-Guide",
-              "wiki/SPSS-&-Data-Entry/SPSS-Variable-Mapping"
+              "SPSS-&-Data-Entry/Data-Entry-Overview",
+              "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
+              "SPSS-&-Data-Entry/Working-with-SPSS-Files",
+              "SPSS-&-Data-Entry/Data-Profile-Guide",
+              "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
             ]
           },
           {
             "group": "Data Projects",
             "pages": [
-              "wiki/Data-Projects/Voxdash-Public-Archive-Overview",
-              "wiki/Data-Projects/Data-Project-List",
-              "wiki/Data-Projects/Data-Project-Overrview",
-              "wiki/Data-Projects/Trend-Analysis",
-              "wiki/Data-Projects/Advanced-Search"
+              "Data-Projects/Voxdash-Public-Archive-Overview",
+              "Data-Projects/Data-Project-List",
+              "Data-Projects/Data-Project-Overrview",
+              "Data-Projects/Trend-Analysis",
+              "Data-Projects/Advanced-Search"
             ]
           },
           {
             "group": "Vendors & Individuals",
             "pages": [
-              "wiki/Vendors-&-Individuals/Add-A-New-Vendor",
-              "wiki/Vendors-&-Individuals/Vendors-Directory",
-              "wiki/Vendors-&-Individuals/Vendor-Page-Overview",
-              "wiki/Vendors-&-Individuals/Add-A-New-Individual",
-              "wiki/Vendors-&-Individuals/Individuals-Directory",
-              "wiki/Vendors-&-Individuals/Individual-Page-Overview",
-              "wiki/Vendors-&-Individuals/User-Profile-Page",
-              "wiki/Vendors-&-Individuals/Vendors-vs-Individuals"
+              "Vendors-&-Individuals/Add-A-New-Vendor",
+              "Vendors-&-Individuals/Vendors-Directory",
+              "Vendors-&-Individuals/Vendor-Page-Overview",
+              "Vendors-&-Individuals/Add-A-New-Individual",
+              "Vendors-&-Individuals/Individuals-Directory",
+              "Vendors-&-Individuals/Individual-Page-Overview",
+              "Vendors-&-Individuals/User-Profile-Page",
+              "Vendors-&-Individuals/Vendors-vs-Individuals"
             ]
           },
           {
             "group": "Survey Questions",
             "pages": [
-              "wiki/Survey-Questions/Survey-Questions-List",
-              "wiki/Survey-Questions/Question-Page-Overview"
+              "Survey-Questions/Survey-Questions-List",
+              "Survey-Questions/Question-Page-Overview"
             ]
           },
           {
             "group": "Maps & Visualization",
             "pages": [
-              "wiki/Maps-&-Visualizations/Map-Overview",
-              "wiki/Maps-&-Visualizations/Drilldown-Map-Examples",
-              "wiki/Maps-&-Visualizations/Map-Visualization-Guide"
+              "Maps-&-Visualizations/Map-Overview",
+              "Maps-&-Visualizations/Drilldown-Map-Examples",
+              "Maps-&-Visualizations/Map-Visualization-Guide"
             ]
           },
           {
             "group": "Reports & Dashboards",
             "pages": [
-              "wiki/Reports-&-Dashboards/Data-Panel-Dashboard"
+              "Reports-&-Dashboards/Data-Panel-Dashboard"
             ]
           },
           {
             "group": "AI Assistant",
             "pages": [
-              "wiki/AI-&-Analysis/AI-Assisted-Data-Chat",
-              "wiki/AI-&-Analysis/AI-Open-Ended-Analysis"
+              "AI-&-Analysis/AI-Assisted-Data-Chat",
+              "AI-&-Analysis/AI-Open-Ended-Analysis"
             ]
           },
           {
             "group": "Terms & Legal",
             "pages": [
-              "wiki/Terms-&-Legal/Terms-&-Contract-Management"
+              "Terms-&-Legal/Terms-&-Contract-Management"
             ]
           },
           {
             "group": "Access Controls",
             "pages": [
-              "wiki/Access-Controls/Public-Access-Settings",
-              "wiki/Access-Controls/Entity-Level-Access-Control",
-              "wiki/Access-Controls/Security-&-Permissions"
+              "Access-Controls/Public-Access-Settings",
+              "Access-Controls/Entity-Level-Access-Control",
+              "Access-Controls/Security-&-Permissions"
             ]
           },
           {
             "group": "User Management",
             "pages": [
-              "wiki/User-Management/User-Management",
-              "wiki/User-Management/Admin-Management",
-              "wiki/User-Management/Create-&-Manage-User-Groups"
+              "User-Management/User-Management",
+              "User-Management/Admin-Management",
+              "User-Management/Create-&-Manage-User-Groups"
             ]
           },
           {
             "group": "Organization Setup",
             "pages": [
-              "wiki/Organization-Setup/Understanding-Organizations",
-              "wiki/Organization-Setup/Add-Vendor-to-Organization",
-              "wiki/Organization-Setup/Organization-Home-Page-Setup",
-              "wiki/Organization-Setup/Switch-Active-Vendor"
+              "Organization-Setup/Understanding-Organizations",
+              "Organization-Setup/Add-Vendor-to-Organization",
+              "Organization-Setup/Organization-Home-Page-Setup",
+              "Organization-Setup/Switch-Active-Vendor"
             ]
           },
           {
             "group": "Billing, Subscriptions & System Usage",
             "pages": [
-              "wiki/Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
-              "wiki/Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
-              "wiki/Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
+              "Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
+              "Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
+              "Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
             ]
           }
         ]
