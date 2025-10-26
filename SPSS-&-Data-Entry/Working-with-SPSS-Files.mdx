@@ -14,35 +14,59 @@ A well-structured SPSS file should include:
 </Frame>
 
 ## **Structuring Survey Data in SPSS**
-Surveys typically consist of a series of questions with predefined answer options. Respondents select their responses based on their opinions. In SPSS, survey data is usually structured by assigning numerical codes to response options. This method allows for efficient data analysis and trend identification.
+Survey datasets typically include a set of questions (variables) and corresponding answers (values). In SPSS, responses are often stored as numeric codes, which allow VoxDash to process and analyze large datasets efficiently.
 
-### **Best Practices for Data Structure**
-For optimal analysis in VoxDash, it is recommended to:
-* Store all responses as numeric values with clear labels.
-VoxDash accepts open-ended text and code it using AI, then saves both the original text and the coded numeric value. Visit [AI-Open Ended Analysis](/AI-&-Analysis/AI-Open-Ended-Analysis)
-* Avoid repeating the same question multiple times with different responses in a single column. For instance, instead of repeating a question four times for four different responses, it's better to maintain a single entry with multiple response options.
-Uploading files with repeated questions can cause issues with trend analysis and comparisons, especially for recurring surveys. Therefore, it is advised to avoid such data structures when preparing your SPSS file for VoxDash.
+For instance:
+| Question        | Response Code | Response Label |
+| --------------- | ------------- | -------------- |
+| Q1_Satisfaction | 1             | Very Satisfied |
+| Q1_Satisfaction | 2             | Satisfied      |
+| Q1_Satisfaction | 3             | Dissatisfied   |
+
+This structure helps VoxDash recognize patterns, identify trends, and generate meaningful insights.
+
+## **Best Practices for Data Structure**
+To optimize your SPSS file for use in VoxDash, follow these best practices:
+
+* **Use numeric codes** for all closed-ended responses, with clear and consistent value labels.
+
+* **Include open-ended text responses** where necessary. VoxDash uses AI to automatically code open-ended text and store both the original text and its corresponding numeric value. (Learn more in [AI-Open Ended Analysis](/AI-&-Analysis/AI-Open-Ended-Analysis))
+
+* **Avoid duplicating questions** Do not repeat the same question across multiple columns for different responses.
+
+❌ Example (Incorrect): Q1_Response1, Q1_Response2, Q1_Response3, Q1_Response4
+
+✅ Example (Correct): One variable Q1 with multiple coded response options.
+
+Duplicating questions can interfere with trend analysis and time comparisons, especially in recurring or longitudinal surveys. 
 
 ## **Optimizing SPSS Data Entry for VoxDash**
-When entering SPSS data into VoxDash, the second wizard allows you to create shortcuts or ignore specific variables. To expedite this process, consider making changes to your SPSS file before uploading.
+When you upload your SPSS file to VoxDash, the **second and third wizard** steps allows you to create shortcuts, hide variables, or manage mappings. To streamline this process, you can set up these preferences directly in your SPSS file before uploading.
 
-### **Naming Conventions**
+## **Naming Conventions**
 To facilitate automatic processing in VoxDash, follow these naming guidelines:
 1. **Shortcuts:**  
-   * Prefix variable names with `Shortcut_` to mark them for quick access.  
+   * Use the prefix `Shortcut_` to mark variables you want to access quickly in VoxDash. These variables are often used for filtering, crosstabs, or quick dashboard analytics.    
    * Example: `Shortcut_Age`, `Shortcut_Income`.  
+VoxDash will automatically create shortcut fields for these variables, making it easier to segment or compare survey responses.
+
 2. **Ignored Variables:**  
-   * Prefix variable names with `Hide_` to exclude them from analysis.  
+   * Use the prefix `Hide_` for variables you want to exclude from analysis. These are typically internal fields or incomplete questions.
    * Example: `Hide_TestVariable`, `Hide_InternalNotes`.
+   Hidden variables remain in your dataset but are not included in VoxDash visualizations. You can still view them later if needed.
+
 3. **Maps Variables:**  
-   * Prefix variable names with `Map_` to create a map for analytics easier.
+   * Use the prefix `Map_` for variables representing geographic or hierarchical mapping information.
    * Example: `Map_Testprovince`
+Mapped variables help VoxDash identify the geographic scope of your data (e.g., country, province, or region). This is especially useful for geo-based analysis or when visualizing results by location.
 
 By following these conventions, VoxDash will automatically recognize and apply these changes, reducing the need for manual adjustments during the second wizard step.
 
 ## **Summary**
 To ensure a smooth data analysis process in VoxDash:
-* Prepare SPSS files with clear labels and meaningful response values.  
-* Avoid repeated questions for better trend analysis.  
-* Use appropriate naming conventions to streamline the data entry process.
-Following these best practices will enhance the efficiency and accuracy of your analytics workflow in VoxDash.
+* Include clear question labels and meaningful value labels.
+* Keep your data well-structured, avoiding duplicated variables.
+* Apply naming conventions (Shortcut_, Hide_, Map_) for easier processing.
+*Prepare open-ended responses for AI-based coding if applicable.
+
+Following these best practices will make your VoxDash project setup faster, your analytics more accurate, and your reporting more consistent.
