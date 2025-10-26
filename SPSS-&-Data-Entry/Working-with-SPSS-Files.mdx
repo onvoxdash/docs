@@ -35,7 +35,6 @@ To optimize your SPSS file for use in VoxDash, follow these best practices:
 * **Avoid duplicating questions** Do not repeat the same question across multiple columns for different responses.
 
 ❌ Example (Incorrect): Q1_Response1, Q1_Response2, Q1_Response3, Q1_Response4
-
 ✅ Example (Correct): One variable Q1 with multiple coded response options.
 
 Duplicating questions can interfere with trend analysis and time comparisons, especially in recurring or longitudinal surveys. 
@@ -46,18 +45,23 @@ When you upload your SPSS file to VoxDash, the **second and third wizard** steps
 ## **Naming Conventions**
 To facilitate automatic processing in VoxDash, follow these naming guidelines:
 1. **Shortcuts:**  
-   * Use the prefix `Shortcut_` to mark variables you want to access quickly in VoxDash. These variables are often used for filtering, crosstabs, or quick dashboard analytics.    
+   * Use the prefix `Shortcut_` to mark variables you want to access quickly in VoxDash. 
+These variables are often used for filtering, crosstabs, or quick dashboard analytics.    
    * Example: `Shortcut_Age`, `Shortcut_Income`.  
+
 VoxDash will automatically create shortcut fields for these variables, making it easier to segment or compare survey responses.
 
 2. **Ignored Variables:**  
-   * Use the prefix `Hide_` for variables you want to exclude from analysis. These are typically internal fields or incomplete questions.
+   * Use the prefix `Hide_` for variables you want to exclude from analysis. 
+These are typically internal fields or incomplete questions.
    * Example: `Hide_TestVariable`, `Hide_InternalNotes`.
-   Hidden variables remain in your dataset but are not included in VoxDash visualizations. You can still view them later if needed.
+
+Hidden variables remain in your dataset but are not included in VoxDash visualizations. You can still view them later if needed.
 
 3. **Maps Variables:**  
    * Use the prefix `Map_` for variables representing geographic or hierarchical mapping information.
    * Example: `Map_Testprovince`
+
 Mapped variables help VoxDash identify the geographic scope of your data (e.g., country, province, or region). This is especially useful for geo-based analysis or when visualizing results by location.
 
 By following these conventions, VoxDash will automatically recognize and apply these changes, reducing the need for manual adjustments during the second wizard step.
