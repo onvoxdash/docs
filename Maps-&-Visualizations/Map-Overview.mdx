@@ -40,6 +40,11 @@ On the Maps page, locate and click the blue **Add Map** button in the top-right 
 ### **3. Provide a Name for the Map**
 
 Enter a descriptive name for your map that reflects its purpose, content, or the region it represents. This helps users identify the map easily.
+Example:
+✅ “Kenya – Counties” (good)
+❌ “Map 1” (unclear)
+
+**Note** Descriptive names make it easier for users to identify and select the correct map later.
 
 ### **4. Choose the Relevant Region**
 
@@ -69,7 +74,27 @@ Provide a clear and accurate name for the new region. The name should properly r
 
 ### **8. Select the Parent Region**
 
-Assign a parent region to the new region. The parent region should make logical sense within the geographical hierarchy to maintain a well-structured system.
+Each region in VoxDash exists within a geographical hierarchy — a structure that defines how locations relate to one another. Assigning a parent region ensures that your map fits correctly within this hierarchy, helping users filter and analyze data at different geographic levels.
+
+**Understanding Region Hierarchy in VoxDash**
+
+In VoxDash, geographic regions are typically arranged from larger to smaller administrative levels, for example:
+
+* **Level 1:** Country (e.g., Kenya)
+
+* **Level 2:** Province or State (e.g., Nairobi County)
+
+* **Level 3:** District or Sub-region (e.g., Westlands District)
+
+* **Level 4:** Local Area or Enumeration Area (e.g., Ward 12)
+
+This hierarchy allows VoxDash to automatically:
+
+* Aggregate data upward (e.g., from district to province).
+
+* Filter reports and dashboards by geographic level.
+
+Enable drill-down visualizations, where users can click from a country → province → district → local area.
 
 ### **9. Add Additional Parent Regions (if applicable)**
 
