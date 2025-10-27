@@ -1,81 +1,101 @@
 ---
-title: "Map Overview" 
+title: "Map Overview"
 ---
 
-Maps help visualize geographic patterns, regional trends, and data distributions in your analytics system.
-Adding a map allows you to associate datasets, questions, or metrics with specific regions so that users can filter, compare, and analyze results geographically.
-Each map in the system is based on **GeoJSON**, a standard format for describing geographic features such as countries, provinces, or survey areas.
-By following this guide, you’ll learn how to create a new map, link it to regions, and ensure it displays correctly across the platform.
+Maps in **VoxDash** help visualize geographic patterns, regional trends, and data distributions within your analytics system. Adding a map allows you to associate datasets, survey questions, or metrics with specific regions so users can **filter, compare, and analyze results geographically**.
+
+Each map in VoxDash is based on **GeoJSON**, a standard file format used to describe geographic features such as countries, provinces, districts, or survey areas.
+
+This guide will walk you through the steps to **create a new map**, **link it to geographic regions**, and **ensure it displays correctly** in the platform.
+
+## **Understanding Maps in VoxDash**
+
+If your survey includes a map variable (a question that refers to a geographic region), you can use the **Map Wizard** in **SPSS Data Entry** to attach a map to your data project.
+
+Alternatively, users can visit the **Regions page** in VoxDash to review existing geographic regions and **download the regions Excel file**. This file contains region codes and names that can be used when setting up your SPSS data before uploading it to VoxDash.
+
+VoxDash already includes most common geographic maps. However, there are cases where you may need to **add a new map manually**, such as:
+
+1. The collection area is **not yet available** in VoxDash.
+2. The collection area exists, but **no sub-regions** (e.g., districts or provinces) are defined under it.
 
 ## Steps to add a new map
 
-### **1\. Navigate to the Maps Page**
+### **1. Navigate to the Maps Page**
 
 Go to the Maps page by clicking on the following link: [Maps Page](https://dataprovider.voxdash.com/maps).
 
-### **2\. Add a New Map**
+### **2. Add a New Map**
 
 On the Maps page, locate and click the blue **Add Map** button in the top-right corner.
 
 <Frame>
-  <img src="/images/map-list.png" alt="add-map" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/map-list.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
-### **3\. Provide a Name for the Map**
+### **3. Provide a Name for the Map**
 
 Enter a descriptive name for your map that reflects its purpose, content, or the region it represents. This helps users identify the map easily.
 
-
-### **4\. Choose the Relevant Region**
+### **4. Choose the Relevant Region**
 
 Select the appropriate region for your map from the dropdown list or search bar. This step ensures that the map is properly categorized and displayed with the correct geographical context.
 
-
-### **5\. Add the GeoJSON Code**
+### **5. Add the GeoJSON Code**
 
 A GeoJSON file is a format for encoding geographical data structures using JavaScript Object Notation (JSON). It is commonly used for representing geographic features, such as points, lines, and polygons, along with their associated attributes.
 
 You can type the GeoJSON code for the geographic data you wish to include on the map. Make sure the code is formatted correctly to ensure proper display or use this [website](https://code.highcharts.com/mapdata/) to paste the GeoJSON code.
 
 <Frame>
-  <img src="/images/add-new.png" alt="add-map" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/add-new.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
-### **6\. Handle Unrecognized Geographies**
+### **6. Handle Unrecognized Geographies**
 
 If the geography you want to use does not appear in the region list, click the **"Add New Region"** option to define a new region.
 
-### **7\. Define the New Region**
+### **7. Define the New Region**
 
 Provide a clear and accurate name for the new region. The name should properly reflect the geographical area it represents to avoid confusion.
 
-### **8\. Select the Parent Region**
+### **8. Select the Parent Region**
 
 Assign a parent region to the new region. The parent region should make logical sense within the geographical hierarchy to maintain a well-structured system.
 
-
-### **9\. Add Additional Parent Regions (if applicable)**
+### **9. Add Additional Parent Regions (if applicable)**
 
 If the new region falls under multiple parent regions, add each relevant parent region. This ensures that the region is correctly placed within the broader geographical structure.
 
-
-### **10\. Add a Wikipedia Link (Optional)**
+### **10. Add a Wikipedia Link (Optional)**
 
 If a Wikipedia page exists for the region, you can include a link to provide users with additional context and information about the region.
 
 <Frame>
-  <img src="/images/add-region.png" alt="add-map" style={{ borderRadius: '0.5rem' }} />
+  <img
+    src="/images/add-region.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
 </Frame>
 
-### **11\. Click the Create Button**
+### **11. Click the Create Button**
 
 Once all required fields are filled out, click the **Create** button in the bottom-right corner of the page to save your map and the associated region.
 
 ## **Tips for Success:**
 
-* **Ensure GeoJSON Code Accuracy**: Double-check that the GeoJSON code is properly formatted and represents the correct geographic area. Errors in code can result in maps not displaying correctly.  
-* **Consistent Naming Conventions**: Use consistent naming practices for maps and regions to maintain organization and clarity throughout the system.  
-* **Verify Parent Regions**: Carefully confirm that the parent regions you assign are appropriate for the new region to avoid logical inconsistencies in the geographical hierarchy.  
-* **Include Relevant Links**: If a Wikipedia page or other relevant resources exist for the region, include the link to provide users with additional context and detailed information.
+- **Ensure GeoJSON Code Accuracy**: Double-check that the GeoJSON code is properly formatted and represents the correct geographic area. Errors in code can result in maps not displaying correctly.
+- **Consistent Naming Conventions**: Use consistent naming practices for maps and regions to maintain organization and clarity throughout the system.
+- **Verify Parent Regions**: Carefully confirm that the parent regions you assign are appropriate for the new region to avoid logical inconsistencies in the geographical hierarchy.
+- **Include Relevant Links**: If a Wikipedia page or other relevant resources exist for the region, include the link to provide users with additional context and detailed information.
 
 By following this step-by-step guide, you'll ensure that your maps and regions are added correctly, accurately categorized, and well-structured for easy use. This will help improve both the data organization and user experience.
