@@ -10,9 +10,27 @@ This guide will walk you through the steps to **create a new map**, **link it to
 
 ## **Understanding Maps in VoxDash**
 
-If your survey includes a map variable (a question that refers to a geographic region), you can use the **Map Wizard** in **[SPSS Data Entry](https://dataprovider.voxdash.com/maps)** to attach a map to your data project.
+If your survey includes a map variable (a question that refers to a geographic region), you can use the **Map Wizard**  to attach a map to your data project. Learn more about**[SPSS Data Entry](/spss-data-entry)**.
 
-Alternatively, users can visit the **Regions page** in VoxDash to review existing geographic regions and **download the regions Excel file**. This file contains region codes and names that can be used when setting up your SPSS data before uploading it to VoxDash.
+By visiting the **[Maps page](https://dataprovider.voxdash.com/maps)** in dataprovider, you can see all the maps added on VoxDash by admins or your self.
+
+<Frame>
+  <img
+    src="/images/map-list1.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+Alternatively, users can visit the **[Regions page](https://www.voxdash.com/geos)** in VoxDash to review existing geographic regions and **download the regions Excel file**. This file contains region codes and names that can be used when setting up your SPSS data before uploading it to VoxDash.
+
+<Frame>
+  <img
+    src="/images/regions-public.png"
+    alt="regions"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 VoxDash already includes most common geographic maps. However, there are cases where you may need to **add a new map manually**, such as:
 
@@ -41,7 +59,9 @@ On the Maps page, locate and click the blue **Add Map** button in the top-right 
 
 Enter a descriptive name for your map that reflects its purpose, content, or the region it represents. This helps users identify the map easily.
 Example:
+
 ✅ “Kenya – Counties” (good)
+
 ❌ “Map 1” (unclear)
 
 **Note** Descriptive names make it easier for users to identify and select the correct map later.
@@ -68,11 +88,11 @@ You can type the GeoJSON code for the geographic data you wish to include on the
 
 If the geography you want to use does not appear in the region list, click the **"Add New Region"** option to define a new region.
 
-### **7. Define the New Region**
+**Define the New Region**
 
 Provide a clear and accurate name for the new region. The name should properly reflect the geographical area it represents to avoid confusion.
 
-### **8. Select the Parent Region**
+**Select the Parent Region**
 
 Each region in VoxDash exists within a geographical hierarchy — a structure that defines how locations relate to one another. Assigning a parent region ensures that your map fits correctly within this hierarchy, helping users filter and analyze data at different geographic levels.
 
@@ -80,13 +100,15 @@ Each region in VoxDash exists within a geographical hierarchy — a structure th
 
 In VoxDash, geographic regions are typically arranged from larger to smaller administrative levels, for example:
 
-* **Level 1:** Country (e.g., Kenya)
+* Continent (e.g, Africa)
 
-* **Level 2:** Province or State (e.g., Nairobi County)
+* Country (e.g., Kenya)
 
-* **Level 3:** District or Sub-region (e.g., Westlands District)
+* Province or State (e.g., Nairobi County)
 
-* **Level 4:** Local Area or Enumeration Area (e.g., Ward 12)
+* District or Sub-region (e.g., Westlands District)
+
+**Note:** If your geographic data has more sub-region, you can add the map in VoxDash.
 
 This hierarchy allows VoxDash to automatically:
 
@@ -96,11 +118,11 @@ This hierarchy allows VoxDash to automatically:
 
 Enable drill-down visualizations, where users can click from a country → province → district → local area.
 
-### **9. Add Additional Parent Regions (if applicable)**
+**Add Additional Parent Regions (if applicable)**
 
 If the new region falls under multiple parent regions, add each relevant parent region. This ensures that the region is correctly placed within the broader geographical structure.
 
-### **10. Add a Wikipedia Link (Optional)**
+**10. Add a Wikipedia Link (Optional)**
 
 If a Wikipedia page exists for the region, you can include a link to provide users with additional context and information about the region.
 
@@ -112,7 +134,7 @@ If a Wikipedia page exists for the region, you can include a link to provide use
   />
 </Frame>
 
-### **11. Click the Create Button**
+### **7. Click the Create Button**
 
 Once all required fields are filled out, click the **Create** button in the bottom-right corner of the page to save your map and the associated region.
 
