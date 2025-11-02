@@ -8,11 +8,14 @@ In VoxDash, we provide a variety of geographical maps to enhance your data analy
 
 **1\. Log in to VoxDash**  
 
-Visit [voxdash.com](https://www.voxdash.com) and log in with your credentials.  
+Visit [voxdash.com](https://www.voxdash.com) and log in with your credentials. 
+
+If you don’t have an account yet, click Sign Up to create one and verify your email before continuing. 
 
 **2\. Navigate to the Region Section and Explore Available Map**  
 
-Locate the [Regions](https://www.voxdash.com/geos) tab, which is the sixth item in the top navigation menu.
+Once logged in, select the [Regions](https://www.voxdash.com/geos) tab from the top navigation bar (it’s the sixth item).
+This section displays all available regional datasets and map layers supported by VoxDash.
 
 <Frame>
   <img
@@ -24,7 +27,8 @@ Locate the [Regions](https://www.voxdash.com/geos) tab, which is the sixth item 
 
 **3\. Explore Maps in Details**
 
-Click on each map to explore all available details.
+Click on any map card to open its details.
+You can preview region boundaries, metadata and available formats.
 
 <Frame>
   <img
@@ -36,7 +40,7 @@ Click on each map to explore all available details.
 
 **4\. Download Region Data**
 
-Click the blue **"Download"** button in the top-right corner to download the region data.  
+In the map details view, click the blue **Download** button (top-right corner) to export the map data.  
   
 **5\. Search for a Country Map** 
 
@@ -52,16 +56,17 @@ Use the search bar to find maps by country name, then download the map and use i
 
 **6\. Using Map Data in SPSS**
 
-You can use either the region names or the ISO codes (both included in the downloaded file). VoxDash will recognize these and generate a map for your dataset.
+When importing into SPSS, you can reference region names or ISO codes—both are included in the VoxDash map file.
+SPSS will automatically recognize and align them with your data columns.
 
-If the region wasn't already added in VoxDash, you can create one using these steps.
+If the region you need isn’t available yet, you can manually create it in VoxDash by following the next steps.
 
 ## **1\. Navigate to the Maps Page**
 
 Go to the Maps page by clicking on the following link: [Maps Page](https://dataprovider.voxdash.com/maps).
 
 ### **2\. Add a New Map**
-On the Maps page, locate and click the blue **"Add Map"** button in the top-right corner.
+On the Maps page, locate and click the blue **New Map** button in the top-right corner.
 
 <Frame>
   <img
@@ -140,15 +145,28 @@ If a Wikipedia page exists for the region, you can include a link to provide use
 Once all required fields are filled out, click the **Create** button in the bottom-right corner of the page to save your map and the associated region.
 
 
-## **Tips for Success:**
-* **Ensure GeoJSON Code Accuracy**: Double-check that the GeoJSON code is properly formatted and represents the correct geographic area. Errors in code can result in maps not displaying correctly.  
-* **Consistent Naming Conventions**: Use consistent naming practices for maps and regions to maintain organization and clarity throughout the system.  
-* **Verify Parent Regions**: Carefully confirm that the parent regions you assign are appropriate for the new region to avoid logical inconsistencies in the geographical hierarchy.  
-* **Include Relevant Links**: If a Wikipedia page or other relevant resources exist for the region, include the link to provide users with additional context and detailed information.
-After you create your map, go to the SPSS data entry, and the third wizard is where you add a map to your dataset.
-For surveys with geographical data (e.g., country or province) : 
-* Select the map variable and choose the corresponding map from VoxDash.  
-* Match region names if they are written as abbreviations by comparing them with the full region names in VoxDash.  
-* In cases of mismatched regions, manually re-match them in VoxDash.  
-* If a region includes options like "Don’t Know" or "Don’t Say," select **Don’t Map** in VoxDash.  
-By following these steps, you can efficiently utilize VoxDash's mapping features to enhance your data analytics and ensure accurate geographical insights in your SPSS projects.
+## **Tips for Success**
+* **Check GeoJSON Formatting:** Validate your GeoJSON file before uploading to avoid syntax or boundary errors.
+
+* **Use Consistent Names:** Stick to a standard naming format for maps and regions (e.g., Country → State → City).
+
+* **Verify Parent Relationships:** Ensure each region is correctly nested under its parent for accurate mapping.
+
+* **Add External Links:** Linking to Wikipedia or official data sources improves credibility and context.
+
+## **Integrating Maps with SPSS**
+
+After creating or downloading your map:
+
+1\. Open SPSS and import your dataset.
+
+2\. In the Data Mapping Wizard (Step 3), select your Map Variable.
+
+3\. Choose the corresponding VoxDash Map from the dropdown.
+
+4\. Match region names or ISO codes with VoxDash’s entries.
+ * If your dataset uses abbreviations, manually align them.
+
+5\. For responses like “Don’t Know” or “Not Applicable,” select Don’t Map in VoxDash.
+
+By following these steps, you’ll be able to visualize your data geographically, uncover regional patterns, and produce professional data-driven maps directly connected to your SPSS analytics.
