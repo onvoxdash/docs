@@ -52,8 +52,20 @@ You can use either the region names or the ISO codes (both included in the downl
 
 VoxDash already includes most common geographic maps. However, there are cases where you may need to **add a new map manually**, such as:
 
-1. The collection area is **not yet available** in VoxDash.
-2. The collection area exists, but **no sub-regions** (e.g., districts or provinces) are defined under it.
+1. The map region **doesn't exist** in VoxDash..
+2. The map region  **exists** in VoxDash but it **doesn't contain** your desired sub-regions(e.g., districts or provinces).
+
+## Search for a Country Map
+
+Use the search bar to find maps by country name, then download the map and use it in SPSS for analysis.
+
+<Frame>
+  <img
+    src="/images/search-map.png"
+    alt="regions page"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 ## Steps to add a new map
 
@@ -84,9 +96,25 @@ Example:
 
 **Note** Descriptive names make it easier for users to identify and select the correct map later.
 
+<Frame>
+  <img
+    src="/images/map-name.png"
+    alt="add parent"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
 ### **4. Choose the Relevant Region**
 
 Select the appropriate region for your map from the dropdown list or search bar. This step ensures that the map is properly categorized and displayed with the correct geographical context.
+
+<Frame>
+  <img
+    src="/images/map-geo-region.png"
+    alt="add parent"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 ### **5. Add the GeoJSON Code**
 
@@ -96,8 +124,8 @@ You can type the GeoJSON code for the geographic data you wish to include on the
 
 <Frame>
   <img
-    src="/images/add-new.png"
-    alt="add-map"
+    src="/images/map-json.png"
+    alt="add parent"
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame>
@@ -109,6 +137,14 @@ If the geography you want to use does not appear in the region list, click the *
 **Define the New Region**
 
 Provide a clear and accurate name for the new region. The name should properly reflect the geographical area it represents to avoid confusion.
+
+<Frame>
+  <img
+    src="/images/map-new-region.png"
+    alt="add parent"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 **Select the Parent Region**
 
@@ -181,11 +217,29 @@ To manage a map:
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame>
-## **Tips for Success:**
 
-- **Ensure GeoJSON Code Accuracy**: Double-check that the GeoJSON code is properly formatted and represents the correct geographic area. Errors in code can result in maps not displaying correctly.
-- **Consistent Naming Conventions**: Use consistent naming practices for maps and regions to maintain organization and clarity throughout the system.
-- **Verify Parent Regions**: Carefully confirm that the parent regions you assign are appropriate for the new region to avoid logical inconsistencies in the geographical hierarchy.
-- **Include Relevant Links**: If a Wikipedia page or other relevant resources exist for the region, include the link to provide users with additional context and detailed information.
+## **Tips for Success**
+* **Check GeoJSON Formatting:** Validate your GeoJSON file before uploading to avoid syntax or boundary errors.
+
+* **Use Consistent Names:** Stick to a standard naming format for maps and regions (e.g., Country → State → City).
+
+* **Verify Parent Relationships:** Ensure each region is correctly nested under its parent for accurate mapping.
+
+* **Add External Links:** Linking to Wikipedia or official data sources improves credibility and context.
+
+## **Integrating Maps with SPSS**
+
+After creating or downloading your map:
+
+1\. Open SPSS and import your dataset.
+
+2\. In the Data Mapping Wizard (Step 3), select your Map Variable.
+
+3\. Choose the corresponding VoxDash Map from the dropdown.
+
+4\. Match region names or ISO codes with VoxDash’s entries.
+ * If your dataset uses abbreviations, manually align them.
+
+5\. For responses like “Don’t Know” or “Not Applicable”, select Don’t Map in VoxDash.
 
 By following this step-by-step guide, you'll ensure that your maps and regions are added correctly, accurately categorized, and well-structured for easy use. This will help improve both the data organization and user experience.
