@@ -12,7 +12,15 @@ This guide will walk you through the steps to **create a new map**, **link it to
 
 If your survey includes a map variable (a question that refers to a geographic region), you can use the **Map Wizard**  to attach a map to your data project. Learn more about [SPSS Data Entry](/spss-data-entry).
 
-By visiting the **[Maps page](https://dataprovider.voxdash.com/maps)** in dataprovider, you can see all the maps added on VoxDash by admins or your self.
+<Frame>
+  <img
+    src="/images/question-page.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+By visiting the [Maps page](https://dataprovider.voxdash.com/maps) in dataprovider, you can see all the maps added on VoxDash by admins or your self.
 
 <Frame>
   <img
@@ -22,7 +30,7 @@ By visiting the **[Maps page](https://dataprovider.voxdash.com/maps)** in datapr
   />
 </Frame>
 
-Alternatively, users can visit the **[Regions page](https://www.voxdash.com/geos)** in VoxDash to review existing geographic regions, click on each map to view the details of the map such as sub-regions and excisting data related to the map in VoxDash, and **download the regions Excel file**. This file contains region codes and names that can be used when setting up your SPSS data before uploading it to VoxDash. 
+Alternatively, users can visit the [Regions page](https://www.voxdash.com/geos) in VoxDash to review existing geographic regions, click on each map to view the details of the map such as sub-regions and excisting data related to the map in VoxDash, and **download the regions Excel file**. This file contains region codes and names that can be used when setting up your SPSS data before uploading it to VoxDash. 
 
 <Frame>
   <img
@@ -75,7 +83,7 @@ Go to the Maps page by clicking on the following link: [Maps Page](https://datap
 
 ### **2. Add a New Map**
 
-On the Maps page, locate and click the blue **Add Map** button in the top-right corner.
+On the Maps page, locate and click the **Add Map** button in the top-right corner.
 
 <Frame>
   <img
@@ -132,7 +140,7 @@ You can type the GeoJSON code for the geographic data you wish to include on the
 
 ### **6. Handle Unrecognized Geographies**
 
-If the geography you want to use does not appear in the region list, click the **"Add New Region"** option to define a new region.
+If the geography you want to use does not appear in the region list, click the **Add New Region** option to define a new region.
 
 **Define the New Region**
 
@@ -202,14 +210,6 @@ To manage a map:
 
 * 2.Click the **More (⋮)** menu next to the map you want to modify.
 
-* 3.Choose one of the available options:
-
-  **Edit Map:** Update the map’s name, parent region, or GeoJSON data.
-
-  **View Regions:** Open the list of all regions associated with this map. Here you can add alternative name to the regions.
-
-  **Delete Map:** Permanently remove the map from VoxDash.
-
 <Frame>
   <img
     src="/images/edit-map.png"
@@ -217,6 +217,32 @@ To manage a map:
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame>
+
+* 3.Choose one of the available options:
+
+  **Edit Map:** Update the map’s name, parent region, or GeoJSON data.
+
+<Frame>
+  <img
+    src="/images/map-edit.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+  **View Regions:** Open the list of all regions associated with this map. Here you can add or edit alternative names to the regions.
+
+<Frame>
+  <img
+    src="/images/edit-alt-region.png"
+    alt="edit-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+**Delete Map:** Permanently remove the map from VoxDash.
+
+
 
 ## **Tips for Success**
 * **Check GeoJSON Formatting:** Validate your GeoJSON file before uploading to avoid syntax or boundary errors.
