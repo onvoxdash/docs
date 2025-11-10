@@ -3,7 +3,7 @@ title: "Admin Management"
 ---
 
 The **Admin Management page** in VoxDash allows organizations to assign employees to specific administrative roles within their account.
-Through this page, administrators can control who has access to system features, data, and project settings—ensuring proper access levels across the team.
+Through this page, administrators can control who has access to system features, data, and project settings, ensuring proper access levels across the team.
 
 <Frame>
   <img
@@ -15,7 +15,7 @@ Through this page, administrators can control who has access to system features,
 
 ##  Adding a New Administrator
 
-Follow these steps to add a new administrator or team member with specific access permissions:
+Before adding a new admin, choose the organization from header first, then follow these steps to add a new administrator or team member with specific access permissions:
 
 1\. Click the **Add Admin** button located at the top-right corner of the page.
 
@@ -25,7 +25,7 @@ Follow these steps to add a new administrator or team member with specific acces
 
  * **Administrator:**  Has full control over the organization’s data, user management (including other administrators and data users), and all system settings.
 
- * **Editor:**  Can create, edit, and manage project-related data but cannot modify users or system-wide configurations.
+ * **Editor:**  Can create, edit, and manage project-related data but can not modify users or system-wide configurations.
 
  * **Analyst:** Has view-only access to reports and dashboards. Cannot edit or manage data, users, or projects.
 
@@ -42,13 +42,29 @@ Follow these steps to add a new administrator or team member with specific acces
 Once submitted, an invitation email will be sent to the specified address. The recipient will need to accept the invitation to join your organization’s VoxDash account with the assigned role and permissions.
 
 **Note:** 
+ * Every users can have an admin role in different organizations.
  * Only users with Administrator access can add or modify other users.
  * After adding users, you can view or edit their access from the Admin Management table, by clicking on **More (⋮)** next to their name and select **Edit**.
+ * If the organization **Delete** an admin, the admin will lose the access to the data. The data still remain in the organization.
 
 <Frame>
   <img
     src="/images/admin-manage2.png"
     alt="admin Management"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+## How can a user switch among different organizations?
+
+1. **Locate the Header Menu:** At the top of the website, you will see a dropdown or clickable menu labeled with the current organization name.
+2. **Click to Expand the Menu:** Click the organization name to open the list of organizations available to your account.
+3. **Choose an Organization:** Select the desired organization from the list. Once selected, VoxDash will load data and dashboards specific to that organization.
+
+<Frame>
+  <img
+    src="/images/change-org.png"
+    alt="switch Active vendor"
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame>
