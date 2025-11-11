@@ -6,7 +6,9 @@ When an organization has added multiple users, it can simplify project access ma
 
 ## How to Create a User Group
 
-1. Navigate to the **User Management Section** of your dashboard.
+**Note:** Before adding a new user group choose the organization from header first, then follow these steps to add a new user group to your organization:
+
+1. Navigate to the [User Group](https://dataprovider.voxdash.com/org/userGroups) section in organization page.
 
 2. Click on the **Add User Group** button.
 
@@ -14,11 +16,14 @@ When an organization has added multiple users, it can simplify project access ma
   <img src="/images/user-group1.png" alt="user roup" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
+
 3. Enter a **name** for the group. For example:
 
-**Editors** – users who can edit content or data
-**Admins** – users with full access and management permissions
-**Viewers** – users with read-only access
+**Editors:** Users who can edit content or data
+
+**Admins:** Users with full access and management permissions
+
+**Viewers:** Users with read-only access
 
 4. **Add users** to the group by selecting them from the user list.
 
@@ -26,7 +31,50 @@ When an organization has added multiple users, it can simplify project access ma
   <img src="/images/user-group3.png" alt="user roup" style={{ borderRadius: '0.5rem' }} />
 </Frame>
 
-Once created, you can assign the User Group to a project or set access levels for that group, making it easier to manage permissions across your organization.
+## **Steps to Enable or Edit User Groups Access:**
+
+Once created, you can assign the User Group to a project or set access levels for that group, making it easier to manage permissions across your organization. Follow these steps to give access to your user groups:
+
+### **1\. Locate the Entity Access Column**
+
+* Navigate to the [Data Project](https://dataprovider.voxdash.com/projects) page in your application.  
+* Look for the **Entity Access** column, which is the eighth column from the left.
+
+### **2\. Open the Editing Menu**
+
+* Click on the arrow icon next to the relevant entry in the **Entity Access** column.  
+* A menu will appear, allowing you to adjust access settings.
+
+### **3\. Add New Access Permissions**
+
+* In the editing menu, locate and click the **Add** blue button in the bottom-left corner of the menu.
+
+<Frame>
+  <img src="/images/entity-access2.png" alt="entity-access" style={{ borderRadius: '0.5rem' }} />
+</Frame> 
+
+### **4\. Configure Access Details**
+
+* **Select Users:** Choose the groups you want to grant access to.  
+
+* **Assign Roles:** Assign a role to the selected group (e.g., Viewer, Editor, Admin) based on their level of required access.   
+
+ **Note:** If a user group have **organizer** or **owner** role, can access to **data provider panel** of the specific data, other ways, users have access only via **public website**.
+
+* **Set Data Restrictions:** Optionally, limit user access to specific datasets or functions within the project.  
+
+* **Define Expiration Date:** If necessary, set an expiration date for access permissions to ensure temporary access.
+
+<Frame>
+  <img src="/images/entity-access3.png" alt="entity-access" style={{ borderRadius: '0.5rem' }} />
+</Frame> 
+
+### **5\. Save Changes**
+
+Click the **Invite** button to send an invitation or notification to the selected user(s).  
+
+Finally, click the **Submit** button to save your changes and update the access list.
+
 
 ### Tip:
 You can edit a group at any time to add or remove users, or to change its name and permissions.
