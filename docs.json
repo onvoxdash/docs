@@ -12,6 +12,7 @@
         "anchors": [
             {
                 "anchor": "Uploads & File Management",
+                "favicon": "/Data-Management",
                 "icon": "book-open",
                 "pages": [
                     "Data-Management/Bulk-File-Upload",
