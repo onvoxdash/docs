@@ -1,14 +1,15 @@
 ---
-title: "What is an organization?" 
+title: "What is an organization? (Data Provider)" 
 ---
 
 In **VoxDash**, every user who signs up is automatically assigned to a private **organization**. This organization acts as the central workspace where all your data, settings, and team management tools are located.
 When a new user registers on the VoxDash platform, the system immediately creates a dedicated organization for that user. This organization is private by default, meaning only the creator initially has access to it.
 All data uploaded by the user, such as analytics reports, ecommerce datasets, or other structured information, will be stored within this organization. This ensures that your data is securely isolated from other users unless explicitly shared.
 
-## **Key Features of an Organization**
+## **Key Features of an Organization in Data Provider Panel**
 
-Each organization in VoxDash comes with a comprehensive **Data Provider Panel** and a **Settings Dashboard** that allow you to manage your data and team efficiently.
+Each organization in VoxDash has its own data, users and SaaS plan, and the owner can create different organization to  manage everything better. Later the owner can switch between the organization through the header.
+
 
 ### Data Management
 
@@ -25,8 +26,17 @@ Within the **Data Provider Panel**, you can:
 * Edit or update existing data entries
 * Delete data that is no longer needed
 * Track upload history and status
+* **Add vendors:** Integrate third-party vendors or external collaborators into the organization.
 
 This panel serves as your main interface for managing any analytics or ecommerce-related data you bring into VoxDash.
+
+<Frame>
+  <img
+    src="/images/project-list.png"
+    alt="data-entry"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 ### User & Team management
 
@@ -36,6 +46,13 @@ Read these help before hand :
 
 [Create & Manage User Groups](https://help.voxdash.com/User-Management/Create-&-Manage-User-Groups)
 
+<Frame>
+  <img
+    src="/images/user-management1.png"
+    alt="user Management"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 In the **Organization Settings Tab**, you can perform several administrative tasks, including:
 
@@ -43,7 +60,6 @@ In the **Organization Settings Tab**, you can perform several administrative tas
 * **Manage users:** Invite new users by email, assign roles, or remove users.
 * **Create user groups:** Organize users into logical teams or departments for easier permission control.
 * **Assign admins:** Grant administrative privileges to trusted members who can help manage the organization.
-* **Add vendors:** Integrate third-party vendors or external collaborators into the organization.
 
 ### Homepage Customization
 
@@ -62,6 +78,14 @@ You can personalize the landing experience for users in your organization by edi
 
 The [Admin Management](https://help.voxdash.com/User-Management/Admin-Management) page allows organizations to assign employees to different administrative roles within their VoxDash account.
 
+<Frame>
+  <img
+    src="/images/admin-manage1.png"
+    alt="admin Management"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
 ### Organization Settings
 
 In VoxDash, users can [connect a vendor to an organization](https://help.voxdash.com/Organization-Setup/Add-Vendor-to-Organization). This allows for better collaboration, data management, and role assignment across surveys and analytics workflows.
@@ -69,3 +93,27 @@ In VoxDash, users can [connect a vendor to an organization](https://help.voxdash
 ### Setup Profile
 
 When users sign up for VoxDash, a [personal profile page](https://help.voxdash.com/Vendors-&-Individuals/User-Profile-Page) is automatically created. This profile serves as a central place to manage personal details, showcase professional background, and contribute to the platform’s collaborative data environment.
+
+## **How to Select an Organization**
+
+1. **Locate the Header Menu:** At the top of the website, you will see a dropdown or clickable menu labeled with the current organization name.
+2. **Click to Expand the Menu:** Click the organization name to open the list of organizations available to your account.
+3. **Choose an Organization:** Select the desired organization from the list. Once selected, VoxDash will load data and dashboards specific to that organization.
+
+<Frame>
+  <img
+    src="/images/change-org.png"
+    alt="switch Active vendor"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+## **Understanding Organization Access**
+
+* **User Access:** Each user can be a member of one or more organizations. Access to an organization depends on your user permissions, which are typically granted by an admin.
+* **Roles and Permissions:** A user may have different roles in different organizations *(e.g., Admin in Organization A, Analyst in Organization B).* These roles define what actions you can perform, such as viewing reports, managing data sources, or editing configurations.
+## **Adding a New Organization**
+
+Users with the appropriate permissions can add a new organization to the system. This is useful when:
+* Your team manages analytics for multiple businesses or clients.
+* You want to separate environments or departments into distinct data spaces.
