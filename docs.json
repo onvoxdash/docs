@@ -9,6 +9,21 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "navigation": {
+
+    "anchors": [
+      {
+        "anchor": "Uploads & File Management",
+        "icon": "book-open",
+        "pages": [
+              "Data-Management/Bulk-File-Upload",
+              "Data-Management/Multi-Folder-Upload",
+              "Data-Management/Sample-Files",
+              "Data-Management/Placeholder-Files"
+        ]
+      }
+    ]
+  },
     "tabs": [
       {
         "tab": "VoxDash Help Center",
