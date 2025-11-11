@@ -1,183 +1,159 @@
 {
-    "$schema": "https://mintlify.com/docs.json",
-    "theme": "maple",
-    "name": "VoxDash Help Center",
-    "colors": {
-        "primary": "#1A5DBC",
-        "light": "#1A5DBC",
-        "dark": "#3ABFFF"
-    },
-    "favicon": "/favicon.svg",
-    "navigation": {
-        "anchors": [
-            {
-                "anchor": "Uploads & File Management",
-                "favicon": "/Data-Management",
-                "icon": "book-open",
-                "pages": [
-                    "Data-Management/Bulk-File-Upload",
-                    "Data-Management/Multi-Folder-Upload",
-                    "Data-Management/Sample-Files",
-                    "Data-Management/Placeholder-Files"
-                ]
-            },
-                        {
-                "anchor": "SPSS & Data Entry",
-                "icon": "book-open",
-                "pages": [
-                        "SPSS-&-Data-Entry/Data-Entry-Overview",
-                        "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
-                        "SPSS-&-Data-Entry/Working-with-SPSS-Files",
-                        "SPSS-&-Data-Entry/Data-Profile-Guide",
-                        "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
-                ]
-            }
-        ]
-    },
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "VoxDash Help Center",
+  "colors": {
+    "primary": "#1A5DBC",
+    "light": "#1A5DBC",
+    "dark": "#3ABFFF"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
     "tabs": [
-        {
-            "tab": "VoxDash Help Center",
-            "groups": [
-                {
-                    "group": "Getting Started",
-                    "pages": [
-                        "Getting-Started/Getting-Started-Data-User",
-                        "Getting-Started/Getting-Started-Data-Creator"
-                    ]
-                },
-                {
-                    "group": "Uploads & File Management",
-                    "pages": [
-                        "Data-Management/Bulk-File-Upload",
-                        "Data-Management/Multi-Folder-Upload",
-                        "Data-Management/Sample-Files",
-                        "Data-Management/Placeholder-Files"
-                    ]
-                },
-                {
-                    "group": "SPSS & Data Entry",
-                    "pages": [
-                        "SPSS-&-Data-Entry/Data-Entry-Overview",
-                        "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
-                        "SPSS-&-Data-Entry/Working-with-SPSS-Files",
-                        "SPSS-&-Data-Entry/Data-Profile-Guide",
-                        "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
-                    ]
-                },
-                {
-                    "group": "Data Projects",
-                    "pages": [
-                        "Data-Projects/Voxdash-Public-Archive-Overview",
-                        "Data-Projects/Data-Project-List",
-                        "Data-Projects/Data-Project-Overrview",
-                        "Data-Projects/Trend-Analysis",
-                        "Data-Projects/Advanced-Search"
-                    ]
-                },
-                {
-                    "group": "Vendors & Individuals",
-                    "pages": [
-                        "Vendors-&-Individuals/Add-A-New-Vendor",
-                        "Vendors-&-Individuals/Vendors-Directory",
-                        "Vendors-&-Individuals/Vendor-Page-Overview",
-                        "Vendors-&-Individuals/Add-A-New-Individual",
-                        "Vendors-&-Individuals/Individuals-Directory",
-                        "Vendors-&-Individuals/Individual-Page-Overview",
-                        "Vendors-&-Individuals/User-Profile-Page",
-                        "Vendors-&-Individuals/Vendors-vs-Individuals"
-                    ]
-                },
-                {
-                    "group": "Survey Questions",
-                    "pages": [
-                        "Survey-Questions/Survey-Questions-List",
-                        "Survey-Questions/Question-Page-Overview",
-                        "Survey-Questions/Viewing-Survey-Administration-Questions"
-                    ]
-                },
-                {
-                    "group": "Maps & Visualization",
-                    "pages": [
-                        "Maps-&-Visualizations/Map-Overview",
-                        "Maps-&-Visualizations/Drilldown-Map-Examples",
-                        "Maps-&-Visualizations/Map-Visualization-Guide"
-                    ]
-                },
-                {
-                    "group": "Reports & Dashboards",
-                    "pages": [
-                        "Reports-&-Dashboards/Data-Panel-Dashboard"
-                    ]
-                },
-                {
-                    "group": "AI Assistant",
-                    "pages": [
-                        "AI-&-Analysis/AI-Assisted-Data-Chat",
-                        "AI-&-Analysis/AI-Open-Ended-Analysis"
-                    ]
-                },
-                {
-                    "group": "Terms & Legal",
-                    "pages": [
-                        "Terms-&-Legal/Terms-&-Contract-Management"
-                    ]
-                },
-                {
-                    "group": "Access Controls",
-                    "pages": [
-                        "Access-Controls/Public-Access-Settings",
-                        "Access-Controls/Entity-Level-Access-Control",
-                        "Access-Controls/Security-&-Permissions"
-                    ]
-                },
-                {
-                    "group": "User Management",
-                    "pages": [
-                        "User-Management/User-Management",
-                        "User-Management/Admin-Management",
-                        "User-Management/Create-&-Manage-User-Groups"
-                    ]
-                },
-                {
-                    "group": "Organization Setup",
-                    "pages": [
-                        "Organization-Setup/Understanding-Organizations",
-                        "Organization-Setup/Add-Vendor-to-Organization",
-                        "Organization-Setup/Organization-Home-Page-Setup",
-                        "Organization-Setup/Switch-Active-Vendor"
-                    ]
-                },
-                {
-                    "group": "Billing, Subscriptions & System Usage",
-                    "pages": [
-                        "Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
-                        "Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
-                        "Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
-                    ]
-                }
+      {
+        "tab": "VoxDash Help Center",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "Getting-Started/Getting-Started-Data-User",
+              "Getting-Started/Getting-Started-Data-Creator"
             ]
-        }
-    ],
-    "logo": {
-        "light": "/logo/light.svg",
-        "dark": "/logo/dark.svg"
-    },
-    "navbar": {
-        "links": []
-    },
-    "contextual": {
-        "options": [
-            "copy",
-            "view",
-            "chatgpt",
-            "claude",
-            "perplexity",
-            "mcp",
-            "cursor",
-            "vscode"
+          },
+          {
+            "group": "Uploads & File Management",
+            "pages": [
+              "Data-Management/Bulk-File-Upload",
+              "Data-Management/Multi-Folder-Upload",
+              "Data-Management/Sample-Files",
+              "Data-Management/Placeholder-Files"
+            ]
+          },
+          {
+            "group": "SPSS & Data Entry",
+            "pages": [
+              "SPSS-&-Data-Entry/Data-Entry-Overview",
+              "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
+              "SPSS-&-Data-Entry/Working-with-SPSS-Files",
+              "SPSS-&-Data-Entry/Data-Profile-Guide",
+              "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
+            ]
+          },
+          {
+            "group": "Data Projects",
+            "pages": [
+              "Data-Projects/Voxdash-Public-Archive-Overview",
+              "Data-Projects/Data-Project-List",
+              "Data-Projects/Data-Project-Overrview",
+              "Data-Projects/Trend-Analysis",
+              "Data-Projects/Advanced-Search"
+            ]
+          },
+          {
+            "group": "Vendors & Individuals",
+            "pages": [
+              "Vendors-&-Individuals/Add-A-New-Vendor",
+              "Vendors-&-Individuals/Vendors-Directory",
+              "Vendors-&-Individuals/Vendor-Page-Overview",
+              "Vendors-&-Individuals/Add-A-New-Individual",
+              "Vendors-&-Individuals/Individuals-Directory",
+              "Vendors-&-Individuals/Individual-Page-Overview",
+              "Vendors-&-Individuals/User-Profile-Page",
+              "Vendors-&-Individuals/Vendors-vs-Individuals"
+            ]
+          },
+          {
+            "group": "Survey Questions",
+            "pages": [
+              "Survey-Questions/Survey-Questions-List",
+              "Survey-Questions/Question-Page-Overview",
+              "Survey-Questions/Viewing-Survey-Administration-Questions"
+            ]
+          },
+          {
+            "group": "Maps & Visualization",
+            "pages": [
+              "Maps-&-Visualizations/Map-Overview",
+              "Maps-&-Visualizations/Drilldown-Map-Examples",
+              "Maps-&-Visualizations/Map-Visualization-Guide"
+            ]
+          },
+          {
+            "group": "Reports & Dashboards",
+            "pages": [
+              "Reports-&-Dashboards/Data-Panel-Dashboard"
+            ]
+          },
+          {
+            "group": "AI Assistant",
+            "pages": [
+              "AI-&-Analysis/AI-Assisted-Data-Chat",
+              "AI-&-Analysis/AI-Open-Ended-Analysis"
+            ]
+          },
+          {
+            "group": "Terms & Legal",
+            "pages": [
+              "Terms-&-Legal/Terms-&-Contract-Management"
+            ]
+          },
+          {
+            "group": "Access Controls",
+            "pages": [
+              "Access-Controls/Public-Access-Settings",
+              "Access-Controls/Entity-Level-Access-Control",
+              "Access-Controls/Security-&-Permissions"
+            ]
+          },
+          {
+            "group": "User Management",
+            "pages": [
+              "User-Management/User-Management",
+              "User-Management/Admin-Management",
+              "User-Management/Create-&-Manage-User-Groups"
+            ]
+          },
+          {
+            "group": "Organization Setup",
+            "pages": [
+              "Organization-Setup/Understanding-Organizations",
+              "Organization-Setup/Add-Vendor-to-Organization",
+              "Organization-Setup/Organization-Home-Page-Setup",
+              "Organization-Setup/Switch-Active-Vendor"
+            ]
+          },
+          {
+            "group": "Billing, Subscriptions & System Usage",
+            "pages": [
+              "Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
+              "Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
+              "Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
+            ]
+          }
         ]
-    },
-    "footer": {
-        "socials": {}
-    }
+      }
+    ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": []
+  },
+  "contextual": {
+    "options": [
+     "copy",
+     "view",
+     "chatgpt",
+     "claude",
+     "perplexity",
+     "mcp",
+     "cursor",
+     "vscode"
+   ]
+  },
+  "footer": {
+    "socials": {}
+  }
 }
