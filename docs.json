@@ -19,6 +19,17 @@
                     "Data-Management/Sample-Files",
                     "Data-Management/Placeholder-Files"
                 ]
+            },
+                        {
+                "anchor": "SPSS & Data Entry",
+                "icon": "book-open",
+                "pages": [
+                        "SPSS-&-Data-Entry/Data-Entry-Overview",
+                        "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
+                        "SPSS-&-Data-Entry/Working-with-SPSS-Files",
+                        "SPSS-&-Data-Entry/Data-Profile-Guide",
+                        "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
+                ]
             }
         ]
     },
