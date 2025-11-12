@@ -116,8 +116,8 @@
           {
             "group": "Organization Setup",
             "pages": [
-              "Organization-Setup/Understanding-Organizations",
-              "Organization-Setup/Understanding-Organizations2",
+              "Organization-Setup/Understanding-Organization-Dataprovider",
+              "Organization-Setup/Understanding-Organization-Public",
               "Organization-Setup/Add-Vendor-to-Organization",
               "Organization-Setup/Organization-Home-Page-Setup",
               "Organization-Setup/Switch-Active-Vendor"
