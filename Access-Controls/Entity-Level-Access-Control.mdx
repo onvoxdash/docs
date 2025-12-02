@@ -82,7 +82,7 @@ View specific files or survey questions (if VoxDash allows it).
 
 **Where they access it:** **Public** website only.
 
-## **Catalog Level**
+### **Catalog Level**
 
 **What they can do:** 
 View basic information about the Data Project added to VoxDash by the data provider.
@@ -92,6 +92,24 @@ View basic information about the Data Project added to VoxDash by the data provi
 * Use the data-provider panel.
 
 **Where they access it:** **Public** website only.
+
+**Important Notes:**
+
+* Pay attention to the data hierarchy (Data Project → Files and Survey Questions); if you give catalog access in data project section, it is important to define whether you want the user to have access to only basic information about the data project or users can also view files and  survey questions of the data project. 
+In this case a modal will be asking you about the further access, and you can choose which information users can have access to.
+
+<Frame>
+  <img src="/images/modal-access.png" alt="entity-access-modal" style={{ borderRadius: '0.5rem' }} />
+</Frame> 
+
+* You can also give this access directly from data project files tab or from wizard 4 of SPSS data entry; where you can give catalog access to your desired questions.
+
+### **Allow Crosstab Analysis**
+
+This access allows the file to be used in crosstab analysis. Enable this when the dataset includes variables that can be grouped or compared across categories. Give this access if you want users to run crosstab breakdowns and view subgroup comparisons based on the file’s variables.
+
+**Note:**
+This access is only available for Data projects with survey questions, otherwise it won't be shown for data projects without SPSS and survey questions.
 
 ## **Tips:**
 
