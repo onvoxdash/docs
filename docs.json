@@ -63,6 +63,12 @@
             ]
           },
           {
+            "group": "Data Entry Fields",
+            "pages": [
+              "Data-Entry-Fields/SPSS-Data-Entry-Fields"
+            ]
+          },
+          {
             "group": "Survey Questions",
             "pages": [
               "Survey-Questions/Survey-Questions-List",
