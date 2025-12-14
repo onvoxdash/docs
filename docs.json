@@ -65,6 +65,7 @@
           {
             "group": "Data Entry Fields",
             "pages": [
+              "Data-Entry-Fields/Data-Entry-Fields",
               "Data-Entry-Fields/SPSS-Data-Entry-Fields"
             ]
           },
