@@ -73,6 +73,15 @@ Any constraints or restrictions related to the data project are listed in the [L
 * **Limitation on industry sectors:** Indicates economic or occupational sectors where use of the dataset is restricted or prohibited.
 * **Limitation on data purpose:** Lists the purposes for which the dataset may not be used, such as certain types of research, analytics, or operational work.
 * **Limitation on sub-license:** States whether the dataset can be re-licensed or sublicensed to third parties, and under what conditions.
+* **Data license:** Indicates the legal terms for using, sharing, or modifying this dataset. Some licenses allow unrestricted reuse, while others limit commercial use, require attribution, or prohibit changes. Always review the license before using the data.
+* **Data regulations:** Indicates which privacy laws or regulatory frameworks govern this dataset such as GDPR, HIPAA, or CCPA. These rules may affect how you can access, use, share, or analyze the data, especially for sensitive or personal information.
+* **Data elements:** Shows the types of information contained in the dataset such as personal identifiers, health data, financial records, or public-use content. Knowing which elements are included helps assess privacy risks, legal restrictions, and potential for analysis.
+* **Data confidentiality level:** Indicates how sensitive or restricted the dataset is ranging from public and anonymized data to classified or legally protected information. These levels help determine what precautions or permissions are required for access or use.
+* **Restriction:** Describes any additional specific restrictions on the dataset not already covered by other limitation fields.
+* **Citation requirement:** States if and how the dataset must be cited when used in publications or outputs.
+* **Disclaimer:** Provides statements from the data provider clarifying liability, accuracy, or interpretation of the dataset.
+* **URLs related to limitations:** Links to online resources with more detail about the dataset’s usage restrictions.
+
 <Frame>
   <img src="/images/dataproject-limitation.png" alt="data-project-limitation-page" style={{ borderRadius: '0.5rem' }} />
 </Frame>
@@ -84,6 +93,36 @@ The [Technical Info](https://www.voxdash.com/data/4408/technicalinfo) section di
 * **Margin of Error:** The possible deviation in survey results.  
 * **Respondent Demographics:** Information about the age groups of participants.  
 * **General Population Insights:** Broader demographic data for context.
+* **Sampling method:** Describes how participants were selected whether through random sampling, quotas, referrals, or self-selection. This affects how representative the data is and what kinds of statistical inferences are valid. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Is the survey sampling probabilistic?:** Indicates whether participants were selected using probability sampling methods, where every individual had a known, non-zero chance of selection. Probabilistic samples are essential for generalizing to the broader population. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Sampling frame:** Indicates how participants were reached e.g., through phone, mail, online panels, or administrative records. This affects who was included or excluded, and should be considered when assessing coverage, representativeness, and potential bias in the dataset.
+* **Sampling frame source:** Identifies the source of the sampling frame (e.g., list-based, RDD, ABS, panel provider). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Coverage:** Describes the geographic or administrative scope of the dataset such as neighborhood, city, national, or global. Helps you understand how localized or broad the data is, and whether it aligns with your area of interest.
+* **Call-center physical location:** Call-Center physical location
+* **Standard disposition code source:** Indicates the source or reference used for assigning standard disposition codes (e.g., AAPOR, ISO). This helps ensure consistent classification of respondent outcomes.
+* **Version of the standard:** Specifies the version of the standard disposition code framework used. This is important for transparency and compatibility when comparing datasets across time or sources.
+* **Frame:** Describes the sampling frame used to select respondents (e.g., address-based, telephone-based, panel). The frame defines the population that the survey aims to represent.
+* **Survey outcome rates:** Provides key survey outcome metrics such as response rate, cooperation rate, and refusal rate. These metrics help assess data quality and representativeness.
+* **Sampling procedures:** Details the sampling procedure used (e.g., stratified random sampling, quota sampling, RDD). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Within household method:** Indicates whether within-household respondent selection methods were used (e.g., Kish grid, last birthday).
+* **Respondent qualification age:** The age range used to qualify respondents for this survey. If unspecified, no age-based restriction was applied to participant eligibility. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Respondents qualification criteria (screeners imposed):** Describes the criteria used to qualify respondents for inclusion in the sample (e.g., age, occupation, behavior).
+* **Incidence rate (IR%):**  The percentage of contacted individuals who qualified for and completed the survey. This value is calculated by the data provider’s own system and displayed by VoxDash as submitted. VoxDash does not recalculate or verify it.
+* **Quotas imposed:** States whether quotas were used and what dimensions they were based on (e.g., age, gender, region). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Oversamples:** Identifies whether oversamples were used for specific populations and explains their rationale. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Boost or augment:** Specifies whether any subgroup was oversampled or augmented beyond the general sampling plan.
+* **Survey invitation and respondent recruitment procedure:** Explains how respondents were invited to participate in the survey (e.g., email, phone call, in-person). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Average length of interview (LOI):** The average duration, in minutes, it took respondents to complete the interview.
+* **Was the respondent in any way incentivized?:** Indicates whether respondents received incentives and what type (e.g., cash, gift card). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Any occurrences that might have influenced sampling procedures or respondent participation and/or answers:** Number of times the survey was administered (e.g., single wave vs. repeated cross-section). This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Sample size reported by source:** The number of completed responses or cases as stated by the original data provider. This reflects what the source organization has declared as their achieved sample size. This value is calculated by the data provider’s own system and displayed by VoxDash as submitted. VoxDash does not recalculate or verify it.
+* **Sample size calculated by VoxDash:** The number of valid cases recognized by VoxDash after processing the uploaded dataset. This figure may differ from the reported size if records are missing, incomplete, or filtered out during validation.
+* **Population size:** Estimated total size of the population from which the sample was drawn. This value is calculated by the data provider’s own system and displayed by VoxDash as submitted. VoxDash does not recalculate or verify it. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **Sampling margin of error calculated by VoxDash:** This Margin of Error is estimated by VoxDash using standard probabilistic assumptions. It reflects expected sampling variability under ideal conditions, assuming a simple random sample. This assumption is based on the data provider’s claim that the sample is probabilistic. The estimate does not account for design effects or real-world sampling imperfections. In this formula, p is the population proportion (typically 0.5 to yield the most conservative estimate), n is the sample size (calculated by VoxDash from the dataset), and N is the population size.
+* **Credibility interval:** The number of percentage points on either side of a survey estimate that captures uncertainty. This value is calculated by the data provider’s own system and displayed by VoxDash as submitted. VoxDash does not recalculate or verify it.
+* **Design effect:** The reported design effect, which reflects the impact of the sample design on the standard error.
+* **Weighted:** Indicates whether the data is weighted and, if so, the weighting methodology applied. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
+* **% called-back for QC:** Percentage of interviews that were reviewed or recontacted for quality control purposes. This value is provided by the data provider. VoxDash displays it as submitted and does not modify or verify it.
 
 <Frame>
   <img src="/images/dataproject-techinfo.png" alt="data-project-technicalinfo-page" style={{ borderRadius: '0.5rem' }} />
