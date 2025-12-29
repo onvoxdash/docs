@@ -30,13 +30,13 @@
             ]
           },
           {
-            "group": "SPSS & Data Entry",
+            "group": "Survey & Data Entry",
             "pages": [
-              "SPSS-&-Data-Entry/Data-Entry-Overview",
-              "SPSS-&-Data-Entry/SPSS-Data-Entry-Guide",
-              "SPSS-&-Data-Entry/Working-with-SPSS-Files",
-              "SPSS-&-Data-Entry/Data-Profile-Guide",
-              "SPSS-&-Data-Entry/SPSS-Variable-Mapping"
+              "Survey-&-Data-Entry/Data-Entry-Overview",
+              "Survey-&-Data-Entry/Survey-Data-Entry-Guide",
+              "Survey-&-Data-Entry/Working-with-SPSS-Files",
+              "Survey-&-Data-Entry/Data-Profile-Guide",
+              "Survey-&-Data-Entry/Survey-Variable-Mapping"
             ]
           },
           {
@@ -66,7 +66,7 @@
             "group": "Data Entry Fields",
             "pages": [
               "Data-Entry-Fields/Data-Entry-Fields",
-              "Data-Entry-Fields/SPSS-Data-Entry-Fields",
+              "Data-Entry-Fields/Survey-Data-Entry-Fields",
               "Data-Entry-Fields/Vendor-Entry-Fields",
               "Data-Entry-Fields/Person-Entry-Fields"
             ]
