@@ -45,6 +45,69 @@ When enabled, all non-owner access grants, including individual users, groups, a
   <img src="/images/entity-access3.png" alt="entity-access" style={{ borderRadius: '0.5rem' }} />
 </Frame> 
 
+#### **4.1\. Email Domains Explanation**
+
+When a user verifies a business or institutional email address in their profile (for example, name@umd.edu), VoxDash extracts and validates the email domain (umd.edu).
+
+Once verified:
+
+ - The domain is marked as trusted and eligible for access control.
+
+ - The domain becomes selectable and enforceable in the Email domains field during access configuration.
+
+**Note:** Personal email domains (for example, gmail.com, yahoo.com) do not unlock domain-level access controls.
+
+In the Give Access modal:
+
+Enter a verified domain (for example, umd.edu) in the Email domains field.
+
+VoxDash grants access to all existing and future users whose verified email ends exactly with that domain.
+
+Example:
+
+ Domain entered: umd.edu
+
+ - **Users granted access:**
+
+   - alice@umd.edu
+
+   - bob@umd.edu
+
+ - **Users not granted access:**
+
+   - alice@cs.umd.edu (unless subdomains are enabled)
+
+   - bob@gmail.com
+
+**Note:** This mechanism removes the need to manage access user-by-user for large institutions.
+This step is mandatory. Unverified domains are ignored by the access engine.
+
+#### **4.2\. Optional Inclusion of Subdomains**
+
+The Access to sub-domains option extends domain matching beyond the root domain.
+
+When enabled:
+
+ - VoxDash treats the specified domain as a parent domain.
+
+ - All verified subdomains are automatically included.
+
+ - Example:
+
+   - Domain entered: umd.edu
+
+   - Subdomain access enabled
+
+   - Users granted access:
+
+      - user@umd.edu
+
+      - user@cs.umd.edu
+
+      - user@law.umd.edu
+
+      - user@research.cs.umd.edu
+      
 ### **5\. Save Changes**
 
 Click the **Invite** button to send an invitation or notification to the selected user(s).  
