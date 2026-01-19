@@ -23,6 +23,7 @@
           {
             "group": "Uploads & File Management",
             "pages": [
+              "Data-Management/File-Manager-Table",
               "Data-Management/Bulk-File-Upload",
               "Data-Management/Multi-Folder-Upload",
               "Data-Management/Sample-Files",
