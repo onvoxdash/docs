@@ -87,7 +87,9 @@
             "pages": [
               "Maps-&-Visualizations/Map-Overview",
               "Maps-&-Visualizations/Drilldown-Map-Examples",
-              "Maps-&-Visualizations/Map-Visualization-Guide"
+              "Maps-&-Visualizations/Map-Visualization-Guide",
+              "Maps-&-Visualizations/Geo-List",
+              "Maps-&-Visualizations/Geo-Page-Overview"
             ]
           },
           {
