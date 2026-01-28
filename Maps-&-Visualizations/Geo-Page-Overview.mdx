@@ -3,6 +3,10 @@ title: "Geo Page Overrview"
 ---
 The Geo Page is displayed after a user selects a geographic entity (Geo) from the Geos List. This page provides a comprehensive view of all data, entities, and relationships associated with the selected geography within VoxDash.
 
+<Frame>
+  <img src="/images/geo-us.png" alt="geo" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
 ## **Overview**
 
 geographic area is structured and how it is used across the platform. It connects location-based data and enables users to explore geographic relationships, hierarchies, and linked datasets.
@@ -15,7 +19,7 @@ At the top of the page, users can view:
 - Key metadata related to the Geo
 This section provides a high-level context for the selected geographic region.
 
-## **Parent Regions**
+### **Parent Regions**
 
 If the selected Geo belongs to a larger geographic hierarchy, its parent regions are displayed.
 Parent regions help users:
@@ -23,13 +27,21 @@ Parent regions help users:
 - Navigate to broader regions (e.g., country → continent)
 - View aggregated data at higher geographic levels
 
-## **Sub Regions**
+<Frame>
+  <img src="/images/geo-us1.png" alt="geo" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+### **Sub Regions**
 
 The Sub Regions section lists all geographic entities nested under the selected Geo. These may include:
 - States, provinces, or regions within a country
 - Cities or districts within a region
 - Custom-defined geographic areas
 Sub regions allow users to drill down into more granular geographic data and analysis.
+
+<Frame>
+  <img src="/images/geo-us2.png" alt="geo" style={{ borderRadius: '0.5rem' }} />
+</Frame>
 
 ## **Connected Data Projects**
 
@@ -42,14 +54,37 @@ This section displays all data projects linked to the selected Geo. Users can:
 
 The Geo Page shows all data profiles associated with the selected geographic area. These profiles represent structured records where the Geo has been applied during data entry, enabling location-specific insights.
 
-## **Vendors and Individuals**
+### **Vendors and Individuals**
 
 The page also includes lists of related vendors and individuals connected to the Geo. This allows users to:
 - Identify organizations operating within the geographic area
 - See individuals associated with projects or data in this region
 - Navigate to vendor or individual profile pages for more details
 
-## **Navigation and Geographic Discovery**
+## **Filter**
+
+You can filter the data related to the geography by using the filter sidebar. 
+You can decide to view all the Data Projects, Individuals, Vendors or Questions related to the geography at once or select your desired data.
+You can also filter by :
+
+- **Topics:** Browse survey data organized by topics, making it easier to find insights related to specific themes or subject areas.
+- **Data Type:** Select the type of data contained in the dataset, such as survey responses, administrative records, qualitative transcripts, or metadata. Useful for narrowing down to the kind of information you need.
+- **Industry Sector:** Filter datasets by the industries they relate to (for example, health, education, finance, or technology). This lets you focus on results relevant to a specific sector.
+- **Data Purpose:** Describes the original or permitted uses of the dataset such as research, business intelligence, advocacy, or AI training. Understanding the stated purpose helps assess whether the data is suitable and legally appropriate for your intended use.
+- **Data Mode:** Filter datasets by the method used to collect responses (for example, online panel, telephone interviews, face-to-face, or mixed modes). This helps you compare results based on the way data was gathered.
+- **Data License:** Indicates the legal terms for using, sharing, or modifying this dataset. Some licenses allow unrestricted reuse, while others limit commercial use, require attribution, or prohibit changes. Always review the license before using the data.
+- **Data Regulations:** Indicates which privacy laws or regulatory frameworks govern this dataset such as GDPR, HIPAA, or CCPA. These rules may affect how you can access, use, share, or analyze the data, especially for sensitive or personal information.
+- **Data Elements:** Shows the types of information contained in the dataset such as personal identifiers, health data, financial records, or public-use content. Knowing which elements are included helps assess privacy risks, legal restrictions, and potential for analysis.
+- **Institution Type:** Specifies the type/category of the institution.
+- **Employees Count:** Filter institutions by their reported number of employees.
+- **Coverage:** Select datasets based on geographic, demographic, or topical coverage.
+- **Respondent Qualification Age:** The age range used to qualify respondents for this survey. If unspecified, no age-based restriction was applied to participant eligibility.
+
+<Frame>
+  <img src="/images/geo-us4.png" alt="geo" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+### **Navigation and Geographic Discovery**
 
 By consolidating geographic relationships and linked data in one place, the Geo Page enables:
 - Easier exploration of location-based data
