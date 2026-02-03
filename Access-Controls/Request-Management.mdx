@@ -1,0 +1,80 @@
+---
+title: "Request Management" 
+---
+
+Request Management governs how users request permission to access restricted data projects, questions, or files, and how data providers review and manage those requests.
+This mechanism applies platform-wide and enforces controlled access without exposing analytical details or downloadable assets by default.
+
+## **Preconditions for Access Requests**
+
+Users are allowed to submit an access request only under **both** of the following logical conditions.
+
+### **Condition 1:** Public but Restricted Data
+A data project, question, or file is marked as **publicly visible**, but one or more of the following restrictions apply:
+ - Downloads are disabled
+ - Analytical details are hidden
+ - Full metadata or results are not accessible
+
+In this state, users can browse high-level information but cannot interact with the data in a meaningful way.
+
+### **Condition 2:** Catalog Visibility Granted by Admin
+
+The data provider has explicitly granted the user **catalog visibility** (for example, via organization-level or user-level access), but has not granted full access rights.
+Catalog access allows discovery, **not** usage.
+
+
+## **User Side Flow**
+
+### **Restricted View State**
+
+When either condition applies:
+
+- Users can see the data listing
+- Users cannot:
+ - Download files
+ - View analytical outputs
+ - Access detailed results or breakdowns
+
+A **Request Access** button is displayed.
+
+### **Request Access Steps**
+
+**1. Initiate Request**
+
+- User clicks the **Request Access** button on the relevant data project, question, or file.
+
+**2. Provide Contact Details**
+
+- User enters one or more email addresses that should receive access if approved.
+
+- Multiple emails are allowed to support team-based access requests.
+
+**3.Add Request Message**
+
+- User writes a short explanation or justification for the request.
+
+- This message is visible to the data provider admin and is used for review and clarification.
+
+**4.Submit Request**
+
+Upon submission:
+
+ - The request is recorded in the system
+ - A notification is sent to the relevant admin(s)
+ - The request enters a Pending state
+
+### **Request Outcome Notifications**
+
+After admin review:
+
+- If **approved**:
+ - User receives a notification
+ - Access is granted according to the admin’s decision scope
+
+- If **rejected**:
+ - User receives a notification
+ - No access is granted
+
+- Notifications appear:
+ - In the platform notification center
+ - On the specific data item where access was requested
