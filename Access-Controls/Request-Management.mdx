@@ -78,3 +78,60 @@ After admin review:
 - Notifications appear:
   - In the platform notification center
   - On the specific data item where access was requested
+
+## **Admin Side Flow**
+
+### **Request Management Section**
+
+Admins with the appropriate permissions can access the **Request Management** section within the data provider area.
+
+This section aggregates **all access requests across the platform**, regardless of data type.
+
+### **Admin Capabilities**
+
+For each request, admins can:
+
+**1. Review Request Details**
+  - Requested data item
+  - Requesting user
+  - Submitted email(s)
+  - User’s request message
+  - Request status (Pending, Approved, Rejected)
+
+**2.Communicate with Users**
+
+Use the built-in chat to:
+  -Ask for clarification
+  -Request additional context
+  -Explain decisions
+
+**3.Approve Requests**
+
+- Grant access based on internal policies
+- Approval changes the request state and enables access
+
+**4.Reject Requests**
+- Deny access explicitly
+-User is notified of the rejection
+
+**5.Revoke Previously Approved Access**
+- Admins can revoke access that was approved earlier
+- Revocation immediately removes granted permissions
+- The request state is updated accordingly
+
+### **Filtering and Management Tools**
+
+Admins can use **left-sidebar filters** to manage requests efficiently, such as:
+- Request status (Pending, Approved, Rejected)
+- Data type (project, question, file)
+- Requesting user
+- Date or recency
+
+These filters are intended to support high-volume request environments.
+
+## **Notes and Enforcement**
+
+- Access is never automatic. Visibility does not imply permission.
+- All access decisions are auditable through request records.
+- Revocation is treated as a first-class action, not an exception.
+- The system is designed for controlled sharing, not blanket access.
