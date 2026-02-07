@@ -129,6 +129,12 @@
             ]
           },
           {
+            "group": "Profile Settings",
+            "pages": [
+              "Profile-Settings/Notifications"
+            ]
+          },
+          {
             "group": "Organization Setup",
             "pages": [
               "Organization-Setup/Understanding-Organization-Dataprovider",
