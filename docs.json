@@ -129,9 +129,9 @@
             ]
           },
           {
-            "group": "Profile Settings",
+            "group": "User Central",
             "pages": [
-              "Profile-Settings/Notifications"
+              "User-Central/Notifications"
             ]
           },
           {
