@@ -132,7 +132,8 @@
             "group": "User Central",
             "pages": [
               "User-Central/Notifications",
-              "User-Central/Security"
+              "User-Central/Security",
+              "User-Central/Data-Profiles-List"
             ]
           },
           {
