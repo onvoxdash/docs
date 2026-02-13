@@ -131,9 +131,11 @@
           {
             "group": "User Central",
             "pages": [
-              "User-Central/Notifications",
+              "User-Central/Account-Preference",
               "User-Central/Security",
-              "User-Central/Data-Profiles-List"
+              "User-Central/Data-Profiles-List",
+              "User-Central/Followings",
+              "User-Central/Notifications"
             ]
           },
           {
