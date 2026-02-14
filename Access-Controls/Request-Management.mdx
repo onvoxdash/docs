@@ -1,167 +1,224 @@
 ---
-title: "Request Management" 
+title: "Managing Data Access Requests (Provider Guide)" 
 ---
 
-Request Management governs how users request permission to access restricted data projects, questions, or files, and how data providers review and manage those requests.
-This mechanism applies platform-wide and enforces controlled access without exposing analytical details or downloadable assets by default.
+When you restrict a dataset, users cannot view full records, analytics, or downloads until you approve them.
+Instead, they submit an access request explaining why they need the data. You then evaluate the request and grant an appropriate permission level.
 
-## **Preconditions for Access Requests**
+This helps you:
+* Protect sensitive business information
+* Share data safely with partners or clients
+* Maintain auditability of who accessed what
+* Enforce internal compliance policies
 
-Users are allowed to submit an access request only under **both** of the following logical conditions.
+You always retain control — access can be approved, limited, or revoked at any time.
 
-### **Condition 1:** Public but Restricted Data
-A data project, question, or file is marked as **publicly visible**, but one or more of the following restrictions apply:
-  - Downloads are disabled
-  - Analytical details are hidden
-  - Full metadata or results are not accessible
+## Understanding Access Levels
 
-In this state, users can browse high-level information but cannot interact with the data in a meaningful way.
+When approving a request, you assign a permission level.
+Choose the lowest level that still allows the user to perform their task.
 
-### **Condition 2:** Catalog Visibility Granted by Admin
+| Access Level   | What the User Can Do                  | Typical Use Case                         |
+| -------------- | ------------------------------------- | ---------------------------------------- |
+| **Owner**      | Full management and sharing rights    | Internal team lead or dataset maintainer |
+| **Downloader** | Export or download raw data           | External analysts, BI integration        |
+| **Analyst**    | Use dashboards and analytics only     | Marketing or performance review          |
+| **Viewer**     | Read-only preview of detailed records | Vendor or partner verification           |
 
-The data provider has explicitly granted the user **catalog visibility** (for example, via organization-level or user-level access), but has not granted full access rights.
-Catalog access allows discovery, **not** usage.
+**Recommendation:** Avoid granting Owner access to external organizations unless required.
 
+## Accessing Request Management
 
-## **User Side Flow**
+Go to:
 
-### **Restricted View State**
+**Provider Area → Request Management**
 
-When either condition applies:
+This section centralizes **all requests across every dataset you manage**.
+You do not need to open individual projects to review permissions.
 
-<Frame>
-  <img src="/images/request-user1.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
-</Frame> 
+The page functions as your permission control center and audit log.
 
-- Users can see the data listing
-- Users cannot:
-  - Download files
-  - View analytical outputs
-  - Access detailed results or breakdowns
+**What You See**
 
-A **Request Access** button is displayed.
-
-### **Request Access Steps**
-
-**1. Initiate Request**
-
-- User clicks the **Request Access** button on the relevant data project, question, or file.
-
-<Frame>
-  <img src="/images/request-user2.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
-</Frame> 
-
-
-**2. Provide Contact Details**
-
-- User enters one or more email addresses that should receive access if approved.
-
-- Multiple emails are allowed to support team-based access requests.
+* All pending incoming requests
+* Previously approved users
+* Rejected attempts
+* Revoked permissions
+* Active access holders
 
 <Frame>
-  <img src="/images/request-user3.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/request-admin1.png" alt="request-admin" style={{ borderRadius: '0.5rem' }} />
 </Frame> 
 
+## Configure Required Request Information
 
-**3.Add Request Message**
-
-- User writes a short explanation or justification for the request.
-
-- This message is visible to the data provider admin and is used for review and clarification.
-
-**4.Submit Request**
-
-Upon submission:
-
- - The request is recorded in the system
- - A notification is sent to the relevant admin(s)
- - The request enters a Pending state
-
-### **Request Outcome Notifications**
-
-After admin review:
-
-- If **approved**:
-  - User receives a notification
-  - Access is granted according to the admin’s decision scope
-
-- If **rejected**:
-  - User receives a notification
-  - No access is granted
-
-- Notifications appear:
-  - In the platform notification center
-  - On the specific data item where access was requested
+You can require users to submit specific information before requesting access.
+This ensures you receive enough context to make a decision without repeated back-and-forth messaging.
 
 <Frame>
-  <img src="/images/request-user4.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/request-admin2.png" alt="request-admin" style={{ borderRadius: '0.5rem' }} />
 </Frame> 
 
-## **Admin Side Flow**
+### How It Works
 
-### **Request Management Section**
+Before the request form appears to users, they must fill in the fields you define.
 
-Admins with the appropriate permissions can access the **Request Management** section within the data provider area.
+### Recommended Fields
 
-This section aggregates **all access requests across the platform**, regardless of data type.
+| Field                  | Why It Matters                |
+| ---------------------- | ----------------------------- |
+| Company / Organization | Verify business legitimacy    |
+| Intended Use           | Prevent misuse                |
+| Project Name           | Connect request to real work  |
+| Duration of Access     | Temporary vs permanent        |
+| Legal Agreement        | Compliance or NDA requirement |
 
-### **Admin Capabilities**
+## Reviewing a Request
 
-For each request, admins can:
+Open any request to view full details.
 
-**1. Review Request Details**
-  - Requested data item
-  - Requesting user
-  - Submitted email(s)
-  - User’s request message
-  - Request status (Pending, Approved, Rejected)
+### Request Information Panel
+
+Contains:
+
+* Dataset name
+* Dataset type
+* Requesting user account
+* Submitted email addresses
+* Justification message
+* Custom form responses
+* Submission timestamp
+* Current status
+
+### Status Meanings
+
+| Status   | Meaning                       |
+| -------- | ----------------------------- |
+| Pending  | Awaiting provider action      |
+| Approved | User currently has access     |
+| Rejected | Access denied                 |
+| Revoked  | Access removed after approval |
+
+## Communicating With Users
+
+Each request includes a built-in conversation thread.
+
+### When to Use Chat
+* The request purpose is unclear
+* The user selected the wrong access level
+* You need confirmation of business relationship
+* You must explain compliance requirements
 
 <Frame>
-  <img src="/images/request-admin1.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
+  <img src="/images/request-admin3.png" alt="request-admin" style={{ borderRadius: '0.5rem' }} />
 </Frame> 
 
-<Frame>
-  <img src="/images/request-admin2.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
-</Frame> 
+**Example Questions to Ask**
 
-**2.Communicate with Users**
+* “Will you export the data or only analyze dashboards?”
+* “Is this for internal reporting or client delivery?”
+* “How long do you need access?”
 
-Use the built-in chat to:
-  -Ask for clarification
-  -Request additional context
-  -Explain decisions
+**Tip:** Asking one clarification question often avoids granting excessive permissions.
 
-<Frame>
-  <img src="/images/request-admin3.png" alt="request-user" style={{ borderRadius: '0.5rem' }} />
-</Frame> 
+Messages remain attached to the request for audit tracking.
 
-**3.Approve Requests**
+## Approving Requests
 
-- Grant access based on internal policies
-- Approval changes the request state and enables access
+To grant access:
 
-**4.Reject Requests**
-- Deny access explicitly
--User is notified of the rejection
+1. Open the request
+2. Select permission level
+3. Click **Approve**
 
-**5.Revoke Previously Approved Access**
-- Admins can revoke access that was approved earlier
-- Revocation immediately removes granted permissions
-- The request state is updated accordingly
+**What Happens Automatically**
+* Status changes to **Approved**
+* Permissions activate immediately
+* User receives notification
+* Dataset becomes visible based on role
+* Action recorded in audit history
 
-### **Filtering and Management Tools**
+## Rejecting Requests
 
-Admins can use **left-sidebar filters** to manage requests efficiently, such as:
-- Request status (Pending, Approved, Rejected)
-- Data type (project, question, file)
-- Requesting user
-- Date or recency
+Reject a request when:
+* The use case conflicts with data policy
+* The organization is unknown
+* The purpose is vague or suspicious
+* Legal agreements are missing
 
-These filters are intended to support high-volume request environments.
+### Steps
 
-## **Notes and Enforcement**
+1. Open request
+2. Click **Reject**
+3. Provide optional explanation
+  * Status changes to **Rejected**
+  * User is notified
+  * Dataset remains hidden
+  * Action logged for record keeping
 
-- Access is never automatic. Visibility does not imply permission.
-- All access decisions are auditable through request records.
-- Revocation is treated as a first-class action, not an exception.
-- The system is designed for controlled sharing, not blanket access.
+**Best practice:** Always explain rejections. It reduces repeat requests.
+
+## Revoking Previously Approved Access
+
+Access permissions are not permanent.
+You should periodically review and remove outdated permissions.
+
+### Common Reasons
+* Contract or partnership ended
+* Employee left the company
+* Project completed
+* Security policy update
+* Incorrect approval level
+
+### Steps
+
+1. Open approved request
+2. Click **Remove Access**
+
+### Immediate Effects
+
+* User loses access instantly
+* Analytics and downloads disabled
+* Status updated to **Revoked**
+* Event logged in history
+
+## Filtering and Managing Requests
+
+As requests grow, filtering helps prioritize actions.
+
+Use the left sidebar filters:
+
+### Status Filter
+
+* Pending → Requires action
+* Approved → Review periodically
+* Rejected → Audit attempts
+
+### Data Type Filter
+
+Useful when you manage multiple products:
+* Projects
+* Questions
+* Files
+* Vendor datasets
+
+### User Filter
+Track a specific company or partner.
+
+### Date / Recency Filter
+
+Identify:
+* Old unreviewed requests
+* Recently approved access
+* Expiring collaborations
+
+## Best Practices for Secure Data Sharing
+
+* Require justification fields
+* Prefer Analyst over Downloader
+* Communicate before rejecting unclear requests
+* Never grant permanent external Owner access
+* Revoke access after project completion
+* Document approvals through chat
+
+This workflow ensures your platform remains collaborative while maintaining strict data governance and compliance.

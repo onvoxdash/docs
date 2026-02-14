@@ -117,6 +117,7 @@
               "Access-Controls/Public-Access-Settings",
               "Access-Controls/Entity-Level-Access-Control",
               "Access-Controls/Security-&-Permissions",
+              "Access-Controls/Requesting-Access",
               "Access-Controls/Request-Management"
             ]
           },
