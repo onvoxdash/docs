@@ -31,20 +31,39 @@ Choose the lowest level that still allows the user to perform their task.
 
 Go to:
 
-**Provider Area → Request Management**
+**Data Provider → Request Management**
 
 This section centralizes **all requests across every dataset you manage**.
 You do not need to open individual projects to review permissions.
-
-The page functions as your permission control center and audit log.
 
 **What You See**
 
 * All pending incoming requests
 * Previously approved users
 * Rejected attempts
-* Revoked permissions
 * Active access holders
+
+### Request Information Panel
+
+Contains:
+
+* Dataset name
+* Dataset type
+* Requesting user account
+* Submitted email addresses
+* Justification message
+* Custom form responses
+* Submission timestamp
+* Current status
+
+### Status Meanings
+
+| Status   | Meaning                       |
+| -------- | ----------------------------- |
+| Pending  | Awaiting provider action      |
+| Approved | User currently has access     |
+| Rejected | Access denied                 |
+| Revoked  | Access removed after approval |
 
 <Frame>
   <img src="/images/request-admin1.png" alt="request-admin" style={{ borderRadius: '0.5rem' }} />
@@ -75,33 +94,11 @@ Before the request form appears to users, they must fill in the fields you defin
 
 ## Reviewing a Request
 
-Open any request to view full details.
-
-### Request Information Panel
-
-Contains:
-
-* Dataset name
-* Dataset type
-* Requesting user account
-* Submitted email addresses
-* Justification message
-* Custom form responses
-* Submission timestamp
-* Current status
-
-### Status Meanings
-
-| Status   | Meaning                       |
-| -------- | ----------------------------- |
-| Pending  | Awaiting provider action      |
-| Approved | User currently has access     |
-| Rejected | Access denied                 |
-| Revoked  | Access removed after approval |
+Open any request to view full details, and decide whether to grant access or reject it.
 
 ## Communicating With Users
 
-Each request includes a built-in conversation thread.
+Each request includes a built-in conversation thread. You can ask for more information before giving an access.
 
 ### When to Use Chat
 * The request purpose is unclear
@@ -131,7 +128,7 @@ To grant access:
 2. Select permission level
 3. Click **Approve**
 
-**What Happens Automatically**
+**What Happens Automatically:**
 * Status changes to **Approved**
 * Permissions activate immediately
 * User receives notification
@@ -151,10 +148,10 @@ Reject a request when:
 1. Open request
 2. Click **Reject**
 3. Provide optional explanation
-  * Status changes to **Rejected**
-  * User is notified
-  * Dataset remains hidden
-  * Action logged for record keeping
+   * Status changes to **Rejected**
+   * User is notified
+   * Dataset remains hidden
+   * Action logged for record keeping
 
 **Best practice:** Always explain rejections. It reduces repeat requests.
 
@@ -184,33 +181,80 @@ You should periodically review and remove outdated permissions.
 
 ## Filtering and Managing Requests
 
-As requests grow, filtering helps prioritize actions.
+As the number of incoming access requests grows, efficient filtering becomes essential.
+The filtering tools in the left sidebar allow you to quickly locate, review, and manage specific requests without manually scanning the entire list.
 
-Use the left sidebar filters:
+Using filters helps you:
 
-### Status Filter
+* Prioritize urgent approvals
+* Monitor sensitive datasets
+* Audit user access
+* Maintain clean permission control
+
+<Frame>
+  <img src="/images/request-admin4.png" alt="request-admin" style={{ borderRadius: '0.5rem' }} />
+</Frame> 
+
+Below are the available filters and how to use them effectively.
+
+### 1. Status Filter
+
+Filter requests based on their current state:
 
 * Pending → Requires action
 * Approved → Review periodically
 * Rejected → Audit attempts
 
-### Data Type Filter
+### 2. Data Project Filter
 
-Useful when you manage multiple products:
+Use this filter to display requests related to a specific project or dataset.
+
+This is especially useful when:
+* A project contains sensitive or high-value data
+* You manage multiple projects across departments
+* You need to audit access for a specific initiative
+
+It is also useful when you manage multiple products:
 * Projects
 * Questions
 * Files
 * Vendor datasets
 
-### User Filter
-Track a specific company or partner.
+### 3. Email Filter
 
-### Date / Recency Filter
+Filter by submitted email address(es) to find:
+* All requests from a specific organization
+* Multiple requests tied to the same domain
+* Duplicate or repeated access attempts
 
-Identify:
-* Old unreviewed requests
-* Recently approved access
-* Expiring collaborations
+This is particularly helpful when:
+* A company has several employees requesting access
+* You need to verify consistency in permission levels
+* You are auditing external partner access
+
+### 4. Date Filter
+
+Filter requests by submission date or recency.
+
+Use this filter to:
+* Review newly submitted requests
+* Identify old pending requests
+* Conduct periodic permission audits
+* Monitor recent approval activity
+
+### 5. Name Filter
+
+Filter by the requesting user's name.
+
+This allows you to:
+* Locate all requests from a specific individual
+* Review access history before granting additional permissions
+* Track activity related to key stakeholders
+
+This filter is particularly useful when:
+* A user changes roles
+* You need to revoke or upgrade permissions
+* You are reviewing access during compliance checks
 
 ## Best Practices for Secure Data Sharing
 
