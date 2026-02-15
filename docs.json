@@ -137,8 +137,10 @@
               "User-Central/Data-Profiles-List",
               "User-Central/Followings",
               "User-Central/Organization-Invitations",
+              "User-Central/Access-Management",
               "User-Central/Messaging-Feature",
-              "User-Central/Notifications"
+              "User-Central/Notifications",
+              "User-Central/Setting"
             ]
           },
           {
