@@ -1,0 +1,219 @@
+---
+title: "Dataset Access Levels"
+---
+
+# Dataset Access Levels
+
+Dataset access levels define how users interact with datasets published on the platform. As a data provider, you can configure access restrictions to ensure compliance, protect sensitive ecommerce data, and maintain full traceability of user activity.
+
+Access levels allow you to control:
+
+- Whether users must accept Terms and Conditions
+- Whether users must submit additional information
+- Whether identity verification is required
+- Whether provider approval is required before access
+- How dataset usage is logged and audited
+
+Each dataset must be assigned one of five access levels. The selected level determines the user journey before access is granted.
+
+All access requests, approvals, and confirmations are logged automatically to ensure transparency, compliance, and audit readiness.
+
+## Overview of Access Levels
+
+| Level | Name | User Confirmation | Additional Info Required | Email Verification | Provider Approval |
+|-------|------|------------------|--------------------------|-------------------|-------------------|
+| 1 | Passive Terms | No | No | No | No |
+| 2 | Explicit Acceptance | Yes | No | No | No |
+| 3 | Acceptance + Provider Information | Yes | Yes | No | No |
+| 4 | Acceptance + Information + Verified Email | Yes | Yes | Yes | No |
+| 5 | Controlled Access (Request & Approval) | Yes | Optional | Optional | Yes |
+
+## Level 1 – Passive Terms and Implicit Agreement (Default)
+
+Level 1 is the default access configuration for newly created datasets.
+
+### How it works
+
+Each dataset includes:
+
+- Provider-defined Terms and Conditions
+- A dataset-specific contract
+
+These documents are permanently visible under the **Contract** tab on the dataset page. Users can review and download them at any time.
+
+At this level:
+
+- Users are not required to actively accept the terms
+- Access to the dataset is immediate
+- No additional user input is required
+
+### When to use Level 1
+
+Level 1 is appropriate for:
+
+- Public ecommerce datasets
+- Open analytics dashboards
+- Non-sensitive product or catalog data
+- Freely accessible benchmark datasets
+
+This level provides maximum accessibility while maintaining transparency through visible legal documentation.
+
+## Level 2 – Explicit Acceptance Required
+
+Level 2 introduces mandatory user acknowledgment before access is granted.
+
+### How it works
+
+Before accessing the dataset, users must:
+
+1. Review the Terms and Conditions
+2. Explicitly confirm acceptance (e.g., checkbox confirmation)
+3. Submit an access request
+
+Access is granted automatically after acceptance.
+
+Unlike Level 1, access is not immediate until the user confirms agreement.
+
+### When to use Level 2
+
+Level 2 is recommended for:
+
+- Licensed ecommerce datasets
+- Internal company datasets
+- Data requiring legal acknowledgment
+- Usage-restricted analytical reports
+
+This level ensures documented user consent without increasing operational complexity.
+
+## Level 3 – Explicit Acceptance + Provider Information
+
+Level 3 builds on Level 2 by requiring users to submit additional information defined by the data provider.
+
+### How it works
+
+To gain access, users must:
+
+1. Accept the Terms and Conditions
+2. Complete a provider-defined information form
+3. Submit the request
+
+Access is granted once both steps are completed.
+
+### Provider-Defined Information May Include:
+
+- Organization or affiliation
+- Job title or role
+- Intended use of data
+- Business use case
+- Research purpose
+- Funding source
+- Geographic region of use
+- Any structured compliance declaration
+
+### Why use Level 3?
+
+Level 3 is suitable when:
+
+- Dataset usage must be tracked by organization
+- Commercial ecommerce insights require usage transparency
+- Regulatory reporting is required
+- You need contextual information about how the data will be used
+
+This level improves governance while keeping the process automated.
+
+## Level 4 – Acceptance + Provider Information + Verified Email
+
+Level 4 adds identity verification on top of Level 3 requirements.
+
+### How it works
+
+Users must complete three steps:
+
+1. Accept Terms and Conditions
+2. Submit provider-required information
+3. Verify their email address via OTP (One-Time Password)
+
+Access is granted only after successful verification.
+
+### Why email verification matters
+
+Email verification ensures:
+
+- Valid and traceable user identity
+- Reduced fraudulent access
+- Stronger compliance enforcement
+- Reliable communication channel for audits or updates
+
+### When to use Level 4
+
+Recommended for:
+
+- Commercial ecommerce transaction datasets
+- Customer-level anonymized analytics
+- High-value business intelligence data
+- Partner-only shared datasets
+
+Level 4 provides enhanced security without requiring manual approval.
+
+## Level 5 – Controlled Access (Request and Approval)
+
+Level 5 is the most restrictive access configuration and provides full provider control.
+
+### How it works
+
+Users must:
+
+1. Accept Terms and Conditions
+2. Submit required information (if configured)
+3. Complete email verification (if configured)
+4. Submit an access request
+
+Access is granted only after manual review and approval by the data provider.
+
+There is no automatic access at this level.
+
+### When to use Level 5
+
+Level 5 is recommended for:
+
+- Sensitive ecommerce transaction data
+- Confidential business intelligence reports
+- Commercially licensed datasets
+- Regulatory-restricted datasets
+- Private research collaborations
+
+This level ensures that access is fully controlled and documented.
+
+## Audit and Compliance
+
+For all access levels:
+
+- All acceptance actions are logged
+- Access timestamps are recorded
+- Approval decisions (if applicable) are tracked
+- User-submitted information is stored securely
+- Email verification status is logged
+
+These logs support:
+
+- Compliance audits
+- Legal traceability
+- Internal governance policies
+- Regulatory reporting requirements
+
+## Best Practices for Data Providers
+
+- Use Level 1 for open datasets.
+- Use Level 2 when legal acknowledgment is required.
+- Use Level 3 to collect contextual usage information.
+- Use Level 4 for identity-sensitive ecommerce data.
+- Use Level 5 for confidential or commercial datasets.
+
+Carefully evaluate your dataset’s sensitivity, business impact, and compliance obligations before selecting an access level.
+
+## Related Documentation
+
+- Refer to the [Entity Access](/Access-Controls/Entity-Level-Access-Control) documentation to learn how to grant access to specific users or teams.
+- Refer to the [Public Access](/Access-Controls/Public-Access-Settings) documentation to understand dataset publishing workflows.
+- See [Request Info Section](/Access-Controls/Request-info) to configure custom information forms for Level 3–5 datasets.
+- See [Terms and Conditions Management](/Terms-&-Legal/Terms-&-Contract-Management) and [Terms and Conditions History](/Terms-&-Legal/Terms-and-Contract-History) to manage legal documents and track revisions.

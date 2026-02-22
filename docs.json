@@ -115,6 +115,7 @@
           {
             "group": "Access Controls",
             "pages": [
+              "Access-Controls/Dataset-Access-Levels",
               "Access-Controls/Public-Access-Settings",
               "Access-Controls/Entity-Level-Access-Control",
               "Access-Controls/Security-&-Permissions",
