@@ -167,7 +167,8 @@
           {
             "group": "Questionnaire Builder",
             "pages": [
-              "Questionnaire-Builder/QB-List"
+              "Questionnaire-Builder/QB-List",
+              "Questionnaire-Builder/QB-Create"
             ]
           }
         ]
