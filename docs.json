@@ -163,6 +163,12 @@
               "Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
               "Billing,-Subscriptions-&-System-Usage/Buy-Add--Ons"
             ]
+          },
+          {
+            "group": "Questionnaire Builder",
+            "pages": [
+              "Questionnaire-Builder/QB-List"
+            ]
           }
         ]
       }
