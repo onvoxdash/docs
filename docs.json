@@ -96,6 +96,7 @@
             "group": "Reports & Dashboards",
             "pages": [
               "Reports-&-Dashboards/Data-Panel-Dashboard",
+              "Reports-&-Dashboards/Reports-for-dataproviders",
               "Reports-&-Dashboards/page-views",
               "Reports-&-Dashboards/qaas",
               "Reports-&-Dashboards/search-engine",
