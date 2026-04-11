@@ -95,7 +95,14 @@
           {
             "group": "Reports & Dashboards",
             "pages": [
-              "Reports-&-Dashboards/Data-Panel-Dashboard"
+              "Reports-&-Dashboards/Data-Panel-Dashboard",
+              "Reports-&-Dashboards/Reports-for-dataproviders",
+              "Reports-&-Dashboards/reports-pageviews",
+              "Reports-&-Dashboards/reports-qaas",
+              "Reports-&-Dashboards/reports-searchengines",
+              "Reports-&-Dashboards/reports-usage",
+              "Reports-&-Dashboards/reports-datagovernance",
+              "Reports-&-Dashboards/reports-trends"
             ]
           },
           {
