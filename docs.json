@@ -95,14 +95,19 @@
           {
             "group": "Reports & Dashboards",
             "pages": [
-              "Reports-&-Dashboards/Data-Panel-Dashboard",
-              "Reports-&-Dashboards/Reports-for-dataproviders",
-              "Reports-&-Dashboards/reports-pageviews",
-              "Reports-&-Dashboards/reports-qaas",
-              "Reports-&-Dashboards/reports-searchengines",
-              "Reports-&-Dashboards/reports-usage",
-              "Reports-&-Dashboards/reports-datagovernance",
-              "Reports-&-Dashboards/reports-trends"
+              "Reports-&-Dashboards/Data-Panel-Dashboard"
+            ]
+          },
+          {
+            "group": "Data Providers Reports",
+            "pages": [
+              "Data-Providers-Reports/Reports-for-dataproviders",
+              "Data-Providers-Reports/reports-pageviews",
+              "Data-Providers-Reports/reports-qaas",
+              "Data-Providers-Reports/reports-searchengines",
+              "Data-Providers-Reports/reports-usage",
+              "Data-Providers-Reports/reports-datagovernance",
+              "Data-Providers-Reports/reports-trends"
             ]
           },
           {
