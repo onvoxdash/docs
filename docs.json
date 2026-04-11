@@ -106,18 +106,6 @@
             ]
           },
           {
-            "group": "Data Providers Reports",
-            "pages": [
-              "Data-Providers-Reports/Reports-for-dataproviders",
-              "Data-Providers-Reports/reports-pageviews",
-              "Data-Providers-Reports/reports-qaas",
-              "Data-Providers-Reports/reports-searchengines",
-              "Data-Providers-Reports/reports-usage",
-              "Data-Providers-Reports/reports-datagovernance",
-              "Data-Providers-Reports/reports-trends"
-            ]
-          },
-          {
             "group": "AI Assistant",
             "pages": [
               "AI-&-Analysis/AI-Assisted-Data-Chat",
