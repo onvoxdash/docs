@@ -95,7 +95,11 @@
           {
             "group": "Reports & Dashboards",
             "pages": [
-              "Reports-&-Dashboards/Data-Panel-Dashboard"
+              "Reports-&-Dashboards/Data-Panel-Dashboard",
+              "Reports-&-Dashboards/page-views",
+              "Reports-&-Dashboards/qaas",
+              "Reports-&-Dashboards/search-engine",
+              "Reports-&-Dashboards/usage"
             ]
           },
           {
