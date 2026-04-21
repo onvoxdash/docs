@@ -1,0 +1,99 @@
+---
+title: "Viewing Geography Regions in VoxDash"
+---
+
+The View Geography Regions feature in VoxDash allows data providers to manage regional details for their maps. Once a map has been added to VoxDash, you can easily view, edit, delete, and export or import all the geographic regions associated with it.
+
+## Accessing the Maps Page
+
+• **Open the Data Provider Panel**
+
+From your VoxDash dashboard, go to the Data Provider section. This area allows you to manage all datasets, maps, and visual elements associated with your organization.
+
+• **Navigate to the Maps Page**
+
+Click Maps in the sidebar. Here, you’ll find a complete list of all maps currently available in VoxDash for your organization.
+
+• **Find Your Map**
+
+Locate the map you want to work with. You can use the search bar or filters to quickly find it if you manage multiple maps.
+
+<Frame>
+  <img
+    src="/images/view-geo1.png"
+    alt="view-Geographical-Region"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+## Viewing Geography Regions
+
+1. On the Maps page, locate your desired map and click the **menu icon** (⋮) on the right side of its row.  
+
+2. From the dropdown list, choose **View Geography Regions**.  
+   A **modal window** appears, listing all defined regions for that map.  
+
+Within this modal, you can:
+- **Edit** a region’s properties (e.g., rename or update boundaries)  
+- **Delete** regions you no longer need  
+- **Add** new regions manually or via import  
+
+<Frame>
+  <img
+    src="/images/view-geo2.png"
+    alt="view-Geographical-Region"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+## Exporting Regions
+
+The Export feature allows you to download a complete Excel (.xlsx) file of all the map’s regions.  
+
+This is especially valuable for:
+- Backing up your region configurations  
+- Reviewing region data offline  
+- Sharing configuration with other team members or systems  
+
+### To Export Regions:
+
+1. In the **View Geography Regions** modal, click **Export**.  
+2. VoxDash generates the file and downloads it to your device.  
+
+The exported Excel file includes standardized columns such as:
+- **Region Name**
+- **Region Code or ID**
+- **Existing Alternate Names**
+- **Add Alternate Names**
+
+## Importing Regions
+
+Use the **Import** feature to upload or update region definitions in bulk.  
+This is particularly helpful when you need to:
+- Add multiple new regions at once  
+- Update names or access levels for existing ones  
+- Align boundaries with changes in external geographic data  
+
+### To Import Regions:
+1. In the **View Geography Regions** modal, click **Import**.  
+2. Upload an Excel file (`.xlsx`) that follows the VoxDash region schema.  
+   - Each row should represent a single region.  
+   - Required columns include:
+     - **Region Name**
+     - **Region Code or ID**
+     - **Existing Alternate Names** 
+
+3. Click **Confirm** to apply updates.  
+
+<Frame>
+  <img
+    src="/images/view-geo3.png"
+    alt="view-Geographical-Region"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+## Best Practices
+
+- **Always export before bulk imports** to retain a backup of your current configuration.  
+- **Use consistent naming conventions** for regions to ensure data joins correctly in analytics views.  
