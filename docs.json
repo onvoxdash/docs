@@ -168,10 +168,10 @@
           {
             "group": "Billing, Subscriptions & System Usage",
             "pages": [
-              "Billing,-Subscriptions-&-System-Usage/SaaS-Usage-&-Billing-Summary",
+              "Billing,-Subscriptions-&-System-Usage/Plans",
               "Billing,-Subscriptions-&-System-Usage/Purchase-Subscription-Plan",
               "Billing,-Subscriptions-&-System-Usage/Buy-Add-Ons",
-              "Billing,-Subscriptions-&-System-Usage/subscription"
+              "Billing,-Subscriptions-&-System-Usage/subscription-management"
             ]
           },
           {
