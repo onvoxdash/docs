@@ -1,0 +1,72 @@
+---
+title: "Viewing Accepted Terms & Conditions"
+---
+
+Every data project in VoxDash has its own **Terms & Conditions (T&C)**. These terms outline how the dataset may be used and help data providers ensure compliant and responsible data access.
+
+VoxDash allows data providers to create, edit, and track acceptance of T&C for each project. This section explains how T&C acceptance works, how implicit and explicit acceptance types differ, and how to view all users who have accepted the terms.
+
+## Adding Terms & Conditions to a Data Project
+
+When creating or editing a data project, data providers can attach a custom Terms & Conditions document. This can be done in two ways:
+
+1. **During the Data Entry Process:**  
+   While uploading or configuring a dataset, you can define its T&C directly in the setup form.
+
+2. **Through the File Manager Table:**  
+   If T&C were not added initially, you can attach them later from the **File Manager** in the Data Provider Panel.
+
+> For detailed instructions on creating and attaching Terms & Conditions, refer to the [Terms & Conditions Setup Guide](/Terms-&-Legal/Terms-&-Contract-Management).
+
+## Understanding Explicit vs. Implicit Acceptance
+
+After T&C are attached, data providers can choose how users must accept them before accessing the data.
+
+### 1. Explicit Acceptance  
+Users must **actively accept** the T&C before viewing the dataset.  
+This is used when:
+- The dataset contains sensitive information  
+- Access must be logged for compliance  
+- You need a clear audit trail of who agreed to the terms  
+
+The user will be shown the terms and must click “I Accept” before the dataset becomes accessible.
+
+### 2. Implicit Acceptance  
+If the data project is set to **Public**, users can access the dataset without manually accepting the T&C.  
+In this case, VoxDash automatically marks the acceptance type as **implicit**, meaning:
+
+- No acceptance form is shown to the user  
+- Access is allowed immediately  
+- The system still logs access as an implicit acceptance for auditing  
+
+## Viewing Users Who Accepted the Terms & Conditions
+
+All T&C acceptance records can be viewed from the **File Manager Table** in the Data Provider Panel.
+
+### How to View Accepted T&C:
+1. Open the **Data Provider Panel**.
+2. Navigate to **File Manager**.
+3. Locate the data project you want to review.
+4. Click the **menu icon** (⋮) next to the project.
+5. Select **View Accepted Terms & Conditions**.
+
+You will be taken to the Accepted T&C Table, which lists all users who have accepted the terms.
+
+## Information Displayed in the Accepted T&C Table
+
+The table provides a complete audit log of acceptance events. Each entry includes:
+
+- **Terms & Conditions Name**  
+- **Version ID** (useful when you update the terms)  
+- **Accepted Email** (user who agreed to the terms)  
+- **Accepted Date** (timestamp of acceptance)  
+- **Acceptance Type**  
+  - *Explicit:* User manually accepted  
+  - *Implicit:* Automatically accepted because the project is public  
+
+This log helps maintain compliance, track user access, and manage dataset governance effectively.
+
+## Navigating Between Projects
+
+At the top of the Accepted T&C page, a **search bar** allows you to switch between different data projects without returning to the File Manager Table.  
+Simply enter the project name or keyword, and the system will display the corresponding acceptance records.
