@@ -76,9 +76,11 @@
             "group": "Vendors & Individuals",
             "pages": [
               "Vendors-&-Individuals/Add-A-New-Vendor",
+              "Vendors-&-Individuals/Vendors-list",
               "Vendors-&-Individuals/Vendors-Directory",
               "Vendors-&-Individuals/Vendor-Page-Overview",
               "Vendors-&-Individuals/Add-A-New-Individual",
+              "Vendors-&-Individuals/Individuals-list",
               "Vendors-&-Individuals/Individuals-Directory",
               "Vendors-&-Individuals/Individual-Page-Overview",
               "Vendors-&-Individuals/User-Profile-Page",
@@ -168,6 +170,7 @@
           {
             "group": "User Central",
             "pages": [
+              "User-Central/User-Profile-Page",
               "User-Central/Account-Preference",
               "User-Central/Security",
               "User-Central/Data-Profiles-List",
