@@ -14,16 +14,18 @@
     "metatags": {
       "og:site_name": "VoxDash Help Center",
       "og:type": "website",
-      "og:image": "/images/og-default.jpg",
+      "og:url": "https://help.voxdash.com",
+      "og:image": "https://help.voxdash.com/images/og-default.jpg",
       "twitter:card": "summary",
-      "twitter:image": "/images/og-square.jpg",
+      "twitter:image": "https://help.voxdash.com/images/og-square.jpg",
       "twitter:site": "@voxdash",
+      "twitter:domain": "help.voxdash.com",
       "robots": "index, follow",
       "author": "VoxDash"
     }
   },
   "thumbnails": {
-    "background": "/images/og-default.jpg"
+    "background": "https://help.voxdash.com/images/og-default.jpg"
   },
   "navigation": {
     "tabs": [
