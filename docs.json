@@ -8,6 +8,23 @@
     "dark": "#3ABFFF"
   },
   "favicon": "/favicon.ico",
+  "description": "Help for VoxDash users — step-by-step guides for publishing, governing, and discovering polling data. Learn how to manage datasets, configure access, build questionnaires, run crosstabs, and analyze survey results.",
+  "metadata": {
+    "og:site_name": "VoxDash Help Center",
+    "og:type": "website",
+    "og:image": "/images/og-default.jpg",
+    "twitter:card": "summary",
+    "twitter:image": "/images/og-square.jpg",
+    "twitter:site": "@voxdash",
+    "robots": "index, follow",
+    "author": "VoxDash"
+  },
+  "seo": {
+    "indexing": "all"
+  },
+  "thumbnails": {
+    "background": "/images/og-default.jpg"
+  },
   "navigation": {
     "tabs": [
       {
