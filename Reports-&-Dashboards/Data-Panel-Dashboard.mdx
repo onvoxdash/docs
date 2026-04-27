@@ -1,20 +1,12 @@
 ---
-title: "Data Panel Dashboard" 
-description: "A Data Panel Dashboard is a type of data visualization interface that provides a high-level overview of related datasets. It presents key metrics and KPIs…"
+title: "Data Panel Dashboard"
 ---
 
-A **Data Panel Dashboard** is a type of data visualization interface that provides a high-level overview of related datasets. It presents key metrics and KPIs (Key Performance Indicators) using visual tools such as graphs, charts, and tables. The dashboard is designed to help users easily identify trends, monitor performance, and make informed, data-driven decisions. It is especially useful for sharing insights across teams and stakeholders.
+The **Data Panel Dashboard** is your primary command center in VoxDash. It provides a high-level, visual overview of your entire analytics environment, transforming complex datasets into actionable insights through intuitive graphs, charts, and tables. 
 
-## VoxDash Data Panel Dashboard
+## Understanding Dashboard
 
-The **VoxDash Data Panel Dashboard** offers a centralized and visual summary of your analytics environment. This page provides key insights into:
-
-* Storage usage
-* Usage reports
-* Uploaded file summaries
-* Data entries (including projects, vendors, and individuals)
-* Most visited datasets and entries
-Each section is designed to give you a quick and meaningful overview, helping you navigate your data effectively.
+The VoxDash Data Panel is organized into modular widgets. Each widget offers a snapshot of a specific aspect of your account. You can navigate through these sections to monitor performance, manage resources, and track activity.
 
 <Frame>
   <img
@@ -24,9 +16,10 @@ Each section is designed to give you a quick and meaningful overview, helping yo
   />
 </Frame>
 
-### Storage
+### Storage Usage
 
-In this section, you can view how much storage you’ve used for uploading files. You can also filter the view to compare storage usage between public and private project files.
+This widget keeps you informed about your account's resource consumption.
+*   **What it shows:** The total amount of storage space utilized by your uploaded files.
 
 <Frame>
   <img
@@ -36,9 +29,11 @@ In this section, you can view how much storage you’ve used for uploading files
   />
 </Frame>
 
-### Usage Report 
+### Usage Reports 
 
-Here, you’ll see a visual summary (usually in percentage) of the files you’ve uploaded to VoxDash. This helps you quickly assess your upload volume and storage habits.  
+The Usage Report widget provides a visual summary of page traffic across the VoxDash platform.
+*   **How to use it:** Use the dropdown menu at the top of the chart to select specific pages you wish to monitor.
+*   **Deeper Insights:** The dashboard shows a quick summary, but if you need a granular analysis of traffic patterns or peak activity times, click the **Report** tab to navigate directly to the dedicated **Reports Page**.
 
 <Frame>
   <img
@@ -50,7 +45,9 @@ Here, you’ll see a visual summary (usually in percentage) of the files you’v
 
 ### Files Uploaded
 
-Here you can view the percentage of your uploaded files.  
+This section displays a breakdown of your uploaded data.
+*   **What it shows:** A percentage-based visual of your file inventory. 
+*   **Filtering:** You can filter the chart to view the distribution of **All Files**, **Private**, **Semi-Private**, or **Public** files. This is particularly useful for data governance, helping you ensure that sensitive data is correctly categorized.
 
 <Frame>
   <img
@@ -60,13 +57,14 @@ Here you can view the percentage of your uploaded files.
   />
 </Frame>
 
+## 2. Quick Access & Engagement Metrics
+
 ### Data Entries
 
-This section provides quick access to your most recently added:
-* Data projects
-* Vendors
-* Individuals
-It’s designed for easy navigation and faster workflow continuity.
+This widget serves as your "Recent Activity" feed, providing immediate access to the items you work with most frequently:
+*   **Data Projects:** Your active analytic environments.
+*   **Vendors:** Third-party data sources or providers linked to your account.
+*   **Individuals:** Specific profiles or stakeholders you are currently tracking.
 
 <Frame>
   <img
@@ -76,13 +74,11 @@ It’s designed for easy navigation and faster workflow continuity.
   />
 </Frame>
 
-### **Most Visited**
-This section displays your most frequently accessed items, such as:
-* Survey questions
-* Vendors
-* Individuals
-* Datasets
-Use this section to quickly revisit important or high-traffic entries.
+### Most Visited
+Stay in the loop with what matters most. This section highlights your most frequently accessed assets:
+*   **Survey Questions:** Identify which questions generate the most interest.
+*   **Vendors & Individuals:** See which entities your team is interacting with the most.
+*   **Datasets:** Quickly jump back into the datasets that are central to your current analysis.
 
 <Frame>
   <img
@@ -91,3 +87,31 @@ Use this section to quickly revisit important or high-traffic entries.
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame>
+
+## 3. Total View Counts (Reporting Overview)
+
+VoxDash categorizes data provider metrics into distinct domains to ensure you have the right context for every report. On the dashboard, you will see the **total aggregate numbers** for each of these sub-categories.
+
+**Primary Report Categories:**
+*   **Page Views:** Tracking how often your dashboards or reports are opened.
+*   **QaaS (Questions as a Service):** Usage metrics for your survey questions.
+*   **Search Engines:** Visibility and performance of your data within search tools.
+*   **Usage:** General platform engagement metrics.
+*   **Data Governance:** Compliance and access metrics for your files.
+*   **Trend:** Insights into the movement and patterns of your data over time.
+
+<Frame>
+  <img
+    src="/images/totall-reports.png"
+    alt="Data panel Dashboard"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+> **Note:** The dashboard provides a high-level "Total Count" for these metrics. To perform deep-dive analysis, investigate trends, or export raw data, please navigate to the full **Reports Page**.
+
+### Tips for Success
+*   **Customize your view:** Regularly use the filters at the top of your charts to toggle between project types. 
+*   **Monitor Trends:** Use the "Total View Counts" as a pulse check; if you notice a sudden spike or drop in a category, head over to the **Reports Page** to investigate the underlying cause.
+*   **Collaborate:** Use the dashboard as a baseline for team meetings. It provides a shared "source of truth" that helps align your team on current project status and data priorities.
+
