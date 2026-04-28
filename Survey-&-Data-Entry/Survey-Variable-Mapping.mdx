@@ -1,176 +1,64 @@
 ---
 title: "Setting Up Maps for Survey Variables"
-description: "In VoxDash, we provide a variety of geographical maps to enhance your data analysis capabilities. Follow these steps to view, download, and integrate maps…"
 ---
 
-In VoxDash, we provide a variety of geographical maps to enhance your data analysis capabilities. Follow these steps to view, download, and integrate maps with your Survey data.
+In VoxDash, you can use geographical maps to visualize and analyze survey data by location.
 
-## **Viewing Maps in VoxDash**
+## 1. Adding Map Variables During Survey Data Entry
 
-### **1\. Log in to VoxDash**  
+You can incorporate location-based (“Map”) variables directly when configuring your survey data entry in VoxDash.
 
-Visit [voxdash.com](https://www.voxdash.com) and log in with your credentials. 
+### Step 1: Open Survey Data Entry
+1. Go to the **Data Provider Panel**.
+2. Open the **File Management Table**.
+3. Find the dataset that contains your survey data and select it to **edit the survey data entry**.
 
-If you don’t have an account yet, click Sign Up to create one and verify your email before continuing. 
+### Step 2: Go to the Variable Setup step
+1. Proceed to **Step 3** of the survey data entry process.
+2. This step is where you define your survey’s **map variables**.
 
-### **2\. Navigate to the Region Section and Explore Available Maps**  
+### Step 3: Add the “Map” variable
+1. Choose **Add Variable** (or the relevant option in Step 3).
+2. Based on your survey collection method, look for a variable related to geography, such as:
+   - **Country**
+   - **Region**
+   - **Province**
+   - (or other location levels used by your survey)
 
-Once logged in, select the [Regions](https://www.voxdash.com/geos) tab from the top navigation bar (it’s the sixth item).
-This section displays all available regional datasets and map layers supported by VoxDash.
+## 2. How to Choose the Right Map for Your Survey
 
-<Frame>
-  <img
-    src="/images/regions.png"
-    alt="regions page"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
+VoxDash offers multiple map types to match different geography levels and formats.
 
-### **3\. Explore Maps in Detail**
+1. Navigate to the **Geo** page in VoxDash.
+2. Browse the available maps and open the one that best matches your survey variable (for example, a “Province” map if your survey records provinces).
+3. Once you find the correct map, you have two options:
+   - **Download the map regions Excel file** and compare it with your survey variables/responses.
+   - **Create a new map** if none of the existing maps match your needs.
 
-Click on any map card to open its details.
-You can preview region boundaries, metadata, and available formats.
+For more details about available maps and how they work, read [Map Overview](/docs/Maps-&-Visualizations/Map-Overview).
 
-<Frame>
-  <img
-    src="/images/one-map-view.png"
-    alt="regions page"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
+## 3. Matching Regions and Handling Special Responses
 
-### **4\. Download Region Data**
+After selecting the map, you must ensure that your survey region values correctly match the map’s region names.
 
-In the map detail's view, click the blue **Download** button (top-right corner) to export the map data.  
-  
-### **5\. Search for a Country Map** 
+### Match region names (abbreviations vs. full names)
+- If your survey uses **abbreviations** (e.g., short forms), compare them with the **full region names** used inside VoxDash.
+- Perform the match so VoxDash can correctly associate each response with the correct region.
 
-Use the search bar to find maps by country name, then download the map and use it in Survey for analysis.
+### Re-match mismatched regions manually
+- If any regions do not match automatically, you must **manually remap** them inside VoxDash.
+- This ensures your analysis and visualizations do not place responses in the wrong locations.
 
-<Frame>
-  <img
-    src="/images/search-map.png"
-    alt="regions page"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
+### Handle “Don’t Know / Don’t Say” answers
+If your dataset includes options like:
+- **“Don’t Know”**
+- **“Don’t Say”**
 
-### **6\. Using Map Data in SPSS**
+Then in VoxDash, select **“Don’t Map”** for those options so they are excluded from geographic mapping.
 
-When importing into SPSS, you can reference region names or ISO codes—both are included in the VoxDash map file.
-Survey will automatically recognize and align them with your data columns.
+## 4. Upload the Map
 
-## **Add a New Map**
+When everything is matched and configured:
 
-If the region you need isn’t available yet, you can manually create it in VoxDash by following the next steps.
-
-### **1\. Navigate to the Maps Page**
-
-Go to the Maps page by clicking on the following link: [Maps Page](https://dataprovider.voxdash.com/maps).
-
-### **2\. Add a New Map**
-On the Maps page, locate and click the blue **New Map** button in the top-right corner.
-
-<Frame>
-  <img
-    src="/images/map-page.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **3\. Provide a Name for the Map**
-Enter a descriptive name for your map that reflects its purpose, content, or the region it represents. This helps users identify the map easily.
-
-<Frame>
-  <img
-    src="/images/map-name.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **4\. Choose the Relevant Region**
-Select the appropriate region for your map from the dropdown list or search bar. This step ensures that the map is properly categorized and displayed with the correct geographical context.
-
-<Frame>
-  <img
-    src="/images/map-geo-region.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **5\. Add the GeoJSON Code**
-A GeoJSON file is a format for encoding geographical data structures using JavaScript Object Notation (JSON). It is commonly used for representing geographic features, such as points, lines, and polygons, along with their associated attributes.
-
-**Clarify:** You can use this website to paste or type the GeoJSON code for the geographic data you wish to include on the map. Make sure the code is formatted correctly to ensure proper display.
-
-<Frame>
-  <img
-    src="/images/map-json.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **6\. Handle Unrecognized Geographies**
-If the geography you want to use does not appear in the region list, click the **Add New Region** option to define a new region.
-
-### **7\. Define the New Region**
-Provide a clear and accurate name for the new region. The name should properly reflect the geographical area it represents to avoid confusion.
-
-<Frame>
-  <img
-    src="/images/map-new-region.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **8\. Select the Parent Region**
-Assign a parent region to the new region. The parent region should make logical sense within the geographical hierarchy to maintain a well-structured system.
-
-### **9\. Add Additional Parent Regions (if applicable)**
-If the new region falls under multiple parent regions, add each relevant parent region. This ensures that the region is correctly placed within the broader geographical structure.
-
-### **10\. Add a Wikipedia Link (Optional)**
-If a Wikipedia page exists for the region, you can include a link to provide users with additional context and information about the region.
-
-<Frame>
-  <img
-    src="/images/add-map2.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### **11\. Click the Create Button**
-Once all required fields are filled out, click the **Create** button in the bottom-right corner of the page to save your map and the associated region.
-
-
-## **Tips for Success**
-* **Check GeoJSON Formatting:** Validate your GeoJSON file before uploading to avoid syntax or boundary errors.
-
-* **Use Consistent Names:** Stick to a standard naming format for maps and regions (e.g., Country → State → City).
-
-* **Verify Parent Relationships:** Ensure each region is correctly nested under its parent for accurate mapping.
-
-* **Add External Links:** Linking to Wikipedia or official data sources improves credibility and context.
-
-## **Integrating Maps with SPSS**
-
-After creating or downloading your map:
-
-1\. Open SPSS and import your dataset.
-
-2\. In the Data Mapping Wizard (Step 3), select your Map Variable.
-
-3\. Choose the corresponding VoxDash Map from the dropdown.
-
-4\. Match region names or ISO codes with VoxDash’s entries.
- * If your dataset uses abbreviations, manually align them.
-
-5\. For responses like “Don’t Know” or “Not Applicable”, select Don’t Map in VoxDash.
-
-By following these steps, you’ll be able to visualize your data geographically, uncover regional patterns, and produce professional data-driven maps directly connected to your Survey analytics.
+1. Click **Confirm**.
+2. VoxDash uploads the map and applies it to your survey variable mapping.
