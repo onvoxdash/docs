@@ -46,8 +46,7 @@
               "Data-Management/Bulk-File-Upload",
               "Data-Management/Multi-Folder-Upload",
               "Data-Management/Sample-Files",
-              "Data-Management/Placeholder-Files",
-              "Data-Management/Audit-Trail"
+              "Data-Management/Placeholder-Files"
             ]
           },
           {
@@ -126,7 +125,8 @@
               "Reports-&-Dashboards/search-engine",
               "Reports-&-Dashboards/usage",
               "Reports-&-Dashboards/data-governance",
-              "Reports-&-Dashboards/trends"
+              "Reports-&-Dashboards/trends",
+              "Reports-&-Dashboards/Audit-Trail"
             ]
           },
           {
