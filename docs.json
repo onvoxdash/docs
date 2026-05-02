@@ -171,6 +171,7 @@
           {
             "group": "User Central",
             "pages": [
+              "User-Central/Create-Account",
               "User-Central/User-Profile-Page",
               "User-Central/Account-Preference",
               "User-Central/Security",
