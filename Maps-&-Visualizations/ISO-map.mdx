@@ -1,0 +1,70 @@
+---
+title: "A Guide to ISO Geographic Codes in VoxDash"
+---
+
+VoxDash allows you to visualize survey and analytics data on interactive maps. If your dataset includes a geographic variable—such as country, state, province, district, or region—you can use the **Map Wizard** to connect your data to a map and create geographic visualizations.
+
+## What Are ISO Geographic Codes?
+
+ISO geographic codes are internationally recognized location identifiers used to represent countries, regions, and administrative areas in a standardized format. Examples include:
+
+* **US** for the United States
+* **GB** for the United Kingdom
+* **CA-ON** for Ontario, Canada
+* **JP-13** for Tokyo Prefecture, Japan
+
+Using ISO codes ensures that VoxDash can correctly match your survey data with geographic regions on the map.
+
+# Using ISO Codes with VoxDash Maps
+
+If your survey variable already uses ISO geographic codes, you can quickly connect your data to a map in VoxDash. This feature is especially useful for ecommerce analytics, customer distribution analysis, regional sales tracking, and market research.
+For more information on how to add a map to your survey read [Setting Up Maps for Survey Variables](/Survey-&-Data-Entry/Survey-Variable-Mapping).
+
+## Using Maps Without ISO Codes
+
+If your dataset does not contain ISO geographic codes, you can still use the VoxDash mapping features by preparing the map data manually.
+
+### Exporting a Map Template
+
+1. Open the **Data Provider Panel**.
+2. Navigate to the **Map** page.
+3. Find the map you want to use.
+4. Open the **Menu**.
+5. Choose **View Region** to see detailed regional information.
+
+<Frame>
+  <img
+    src="/images/map-view-region.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+From this page, you can export an Excel file containing the map regions and identifiers.
+
+### Preparing Your Data
+
+After exporting the Excel file:
+
+1. Open the file in Excel or SPSS.
+2. Add the ISO codes to your survey as map variable.
+3. Save the updated file.
+
+### Importing the Updated File into VoxDash
+
+Once your geographic data has been prepared:
+
+1. Import the updated file back into VoxDash.
+2. Do the data entry of your file and add map to your survey. More information [Here](/Survey-&-Data-Entry/Survey-Variable-Mapping)
+3. Open the question with map to view the geographical visualization.
+
+## Tips for Better Map Visualization
+
+* Ensure that geographic codes are consistent and properly formatted.
+* Avoid duplicate or missing region identifiers.
+* Use ISO-standard codes whenever possible for the best compatibility.
+* Verify map-region matching before publishing dashboards or reports.
+
+## Summary
+
+The VoxDash Map Wizard makes it easy to create geographic visualizations from survey and analytics data. Using ISO geographic codes provides the fastest and most accurate mapping experience. Even if your dataset does not include ISO codes, you can still prepare and import custom geographic data using exported map templates.
