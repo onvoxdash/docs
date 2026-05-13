@@ -74,7 +74,392 @@ The exported Excel file includes standardized columns such as:
   />
 </Frame>
 
-To understand **ISO Codes** and **Exported Excel** read this [document](/Maps-&-Visualizations/ISO-map)
+### Understanding the Exported Region File
+
+The exported Excel file contains geographic metadata used by VoxDash to identify and match regions.
+
+Below is an explanation of each column in the exported file.
+
+#### GeoNameId
+
+A unique internal identifier assigned to the geographic region.
+
+This value is used internally by geographic databases and mapping systems.
+
+Example:
+
+* 6252001 = United States
+
+<Frame>
+  <img
+    src="/images/region-export-geoid.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+#### Region Name
+
+The readable name of the geographic region.
+
+Examples:
+
+* United States
+* Ontario
+* California
+* São Paulo
+
+This is typically the main column users use when reviewing or matching data.
+
+<Frame>
+  <img
+    src="/images/region-export-regionname.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+#### ISO 3166-1 alpha-2
+
+A two-letter country code defined by the ISO 3166-1 standard.
+
+Examples:
+
+| Country       | Code |
+| ------------- | ---- |
+| United States | US   |
+| Canada        | CA   |
+| Germany       | DE   |
+
+<Frame>
+  <img
+    src="/images/region-export-iso2.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This is one of the most commonly used geographic formats in ecommerce and analytics systems.
+
+#### ISO 3166-1 alpha-3
+
+A three-letter country code defined by the ISO 3166-1 standard.
+
+Examples:
+
+| Country       | Code |
+| ------------- | ---- |
+| United States | USA  |
+| Canada        | CAN  |
+| Germany       | DEU  |
+
+<Frame>
+  <img
+    src="/images/region-export-iso3.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This format is often used in enterprise systems, APIs, and reporting platforms.
+
+#### ISO 3166-1 numeric
+
+A numeric country code assigned by ISO.
+
+Examples:
+
+| Country       | Numeric Code |
+| ------------- | ------------ |
+| United States | 840          |
+| Canada        | 124          |
+| Germany       | 276          |
+
+<Frame>
+  <img
+    src="/images/region-export-isono.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+Numeric ISO values are useful for systems that require numeric identifiers instead of text codes.
+
+#### ISO 3166-2
+
+A subdivision code used for states, provinces, districts, and territories.
+
+Examples:
+
+| Region                    | Code  |
+| ------------------------- | ----- |
+| Ontario, Canada           | CA-ON |
+| California, United States | US-CA |
+| Tokyo, Japan              | JP-13 |
+
+<Frame>
+  <img
+    src="/images/region-export-iso.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field is especially important when working with regional analytics inside a country.
+
+#### UN M.49
+
+A geographic classification code maintained by the United Nations.
+
+These codes are used for international statistics and reporting.
+
+Examples include:
+
+* 840 = United States
+* 124 = Canada
+
+<Frame>
+  <img
+    src="/images/region-export-um.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field may be useful for international reporting and statistical analysis.
+
+#### GeoNames ID
+
+A unique identifier from the GeoNames geographic database.
+
+GeoNames IDs are commonly used in GIS systems and geographic APIs.
+
+<Frame>
+  <img
+    src="/images/region-export-geonameID.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field can help integrate VoxDash geographic data with external geographic platforms.
+
+#### Source Provider
+
+Indicates the provider or database source used for the geographic information.
+
+<Frame>
+  <img
+    src="/images/region-export-source.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This helps identify where the geographic data originated.
+
+#### Source Code
+
+The original region code provided by the source database.
+
+<Frame>
+  <img
+    src="/images/region-export-source2.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This value may differ from ISO codes depending on the geographic data provider.
+
+#### Admission Category
+
+Defines the administrative classification of the region.
+
+Examples may include:
+
+* Country
+* State
+* Province
+* Territory
+* District
+
+<Frame>
+  <img
+    src="/images/region-export-admission.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field helps distinguish between different geographic hierarchy levels.
+
+#### Feature Code
+
+A classification code that identifies the type of geographic feature.
+
+Examples:
+
+* Country
+* Administrative region
+* City
+* Island
+
+<Frame>
+  <img
+    src="/images/region-export-feature.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field is mainly used for geographic processing and internal mapping logic.
+
+#### Latitude
+
+The geographic latitude coordinate of the region.
+
+Latitude is used to position the region on maps.
+
+Example:
+
+* 40.7128
+
+<Frame>
+  <img
+    src="/images/region-export-latitude.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+#### Longitude
+
+The geographic longitude coordinate of the region.
+
+Longitude works together with latitude for map positioning.
+
+Example:
+
+* -74.0060
+
+<Frame>
+  <img
+    src="/images/region-export-longitude.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+#### Population
+
+The estimated population of the region.
+
+<Frame>
+  <img
+    src="/images/region-export-population.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field can be useful for demographic analysis and market segmentation.
+
+#### Timezone
+
+The primary timezone associated with the region.
+
+Examples:
+
+* America/New_York
+* Europe/Berlin
+* Asia/Tokyo
+
+<Frame>
+  <img
+    src="/images/region-export-time.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This information may help when analyzing time-based data.
+
+#### Parent Source Code
+
+The identifier of the parent geographic region.
+
+Examples:
+
+* A state may reference its parent country.
+* A district may reference its parent province.
+
+<Frame>
+  <img
+    src="/images/region-export-parent.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This field helps maintain geographic hierarchy relationships. 
+
+#### Existing Alternate Names
+
+Contains alternative names already associated with the region.
+
+Examples:
+
+* USA
+* United States of America
+* US
+
+<Frame>
+  <img
+    src="/images/region-export-existingalt.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+This helps VoxDash recognize multiple naming variations.
+
+#### Add Alternate Names
+
+A customizable field where users can add additional region aliases or alternate spellings.
+
+This is useful when your dataset uses non-standard region names.
+
+Examples:
+
+* NYC for New York City
+* Cali for California
+
+<Frame>
+  <img
+    src="/images/region-export-alt.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+Adding alternate names improves matching accuracy.
+
+**Important Notes About Alternate Names**
+
+Only the **“Add Alternate Names”** column is editable.
+
+When adding alternate names:
+
+* Separate multiple values using the `|` (pipe) character.
+* Alternate names are shared across every map that uses the same geographic region.
+* Rows whose GeoName is not linked to a valid geographic region will be rejected with a row-level validation error.
+
+Example:
+
+NYC | New York | New York City
+
+To learn more about **ISO Codes** read this [document](/Maps-&-Visualizations/ISO-map)
 
 ## updating Regions Alternative Names
 
