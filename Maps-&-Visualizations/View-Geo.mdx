@@ -73,13 +73,14 @@ The exported Excel file includes standardized columns such as:
     style={{ borderRadius:"0.5rem" }}
   />
 </Frame> 
-### Understanding the Exported Region File
+
+### Understanding the Exported Region File 
 
 The exported Excel file contains geographic metadata used by VoxDash to identify and match regions.
 
 Below is an explanation of each column in the exported file.
 
-#### GeoNameId
+#### GeoNameId 
 
 A unique internal identifier assigned to the geographic region.
 
@@ -97,7 +98,7 @@ Example:
   />
 </Frame>
 
-#### Region Name
+#### Region Name 
 
 The readable name of the geographic region.
 
@@ -118,7 +119,7 @@ This is typically the main column users use when reviewing or matching data.
   />
 </Frame>
 
-#### ISO 3166-1 alpha-2
+#### ISO 3166-1 alpha-2 
 
 A two-letter country code defined by the ISO 3166-1 standard.
 
@@ -140,7 +141,7 @@ Examples:
 
 This is one of the most commonly used geographic formats in ecommerce and analytics systems.
 
-#### ISO 3166-1 alpha-3
+#### ISO 3166-1 alpha-3 
 
 A three-letter country code defined by the ISO 3166-1 standard.
 
@@ -162,7 +163,7 @@ Examples:
 
 This format is often used in enterprise systems, APIs, and reporting platforms.
 
-#### ISO 3166-1 numeric
+#### ISO 3166-1 numeric 
 
 A numeric country code assigned by ISO.
 
@@ -184,7 +185,7 @@ Examples:
 
 Numeric ISO values are useful for systems that require numeric identifiers instead of text codes.
 
-#### ISO 3166-2
+#### ISO 3166-2 
 
 A subdivision code used for states, provinces, districts, and territories.
 
@@ -206,7 +207,7 @@ Examples:
 
 This field is especially important when working with regional analytics inside a country.
 
-#### UN M.49
+#### UN M.49 
 
 A geographic classification code maintained by the United Nations.
 
@@ -227,7 +228,7 @@ Examples include:
 
 This field may be useful for international reporting and statistical analysis.
 
-#### GeoNames ID
+#### GeoNames ID 
 
 A unique identifier from the GeoNames geographic database.
 
@@ -243,7 +244,7 @@ GeoNames IDs are commonly used in GIS systems and geographic APIs.
 
 This field can help integrate VoxDash geographic data with external geographic platforms.
 
-#### Source Provider
+#### Source Provider 
 
 Indicates the provider or database source used for the geographic information.
 
@@ -257,7 +258,7 @@ Indicates the provider or database source used for the geographic information.
 
 This helps identify where the geographic data originated.
 
-#### Source Code
+#### Source Code 
 
 The original region code provided by the source database.
 
@@ -271,7 +272,7 @@ The original region code provided by the source database.
 
 This value may differ from ISO codes depending on the geographic data provider.
 
-#### Admission Category
+#### Admission Category 
 
 Defines the administrative classification of the region.
 
@@ -293,7 +294,7 @@ Examples may include:
 
 This field helps distinguish between different geographic hierarchy levels.
 
-#### Feature Code
+#### Feature Code 
 
 A classification code that identifies the type of geographic feature.
 
@@ -314,7 +315,7 @@ Examples:
 
 This field is mainly used for geographic processing and internal mapping logic.
 
-#### Latitude
+#### Latitude 
 
 The geographic latitude coordinate of the region.
 
@@ -332,7 +333,7 @@ Example:
   />
 </Frame>
 
-#### Longitude
+#### Longitude 
 
 The geographic longitude coordinate of the region.
 
@@ -350,7 +351,7 @@ Example:
   />
 </Frame>
 
-#### Population
+#### Population 
 
 The estimated population of the region.
 
@@ -364,7 +365,7 @@ The estimated population of the region.
 
 This field can be useful for demographic analysis and market segmentation.
 
-#### Timezone
+#### Timezone 
 
 The primary timezone associated with the region.
 
@@ -384,7 +385,7 @@ Examples:
 
 This information may help when analyzing time-based data.
 
-#### Parent Source Code
+#### Parent Source Code 
 
 The identifier of the parent geographic region.
 
@@ -403,7 +404,7 @@ Examples:
 
 This field helps maintain geographic hierarchy relationships. 
 
-#### Existing Alternate Names
+#### Existing Alternate Names 
 
 Contains alternative names already associated with the region.
 
@@ -423,7 +424,7 @@ Examples:
 
 This helps VoxDash recognize multiple naming variations.
 
-#### Add Alternate Names
+#### Add Alternate Names 
 
 A customizable field where users can add additional region aliases or alternate spellings.
 
