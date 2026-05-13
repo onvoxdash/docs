@@ -41,7 +41,7 @@ If your dataset does not contain ISO geographic codes, you can still use the Vox
 </Frame>
 <Frame>
   <img
-    src="/images/view-region.png"
+    src="/images/view-region-ex.png"
     alt="add-map"
     style={{ borderRadius:"0.5rem" }}
   />
@@ -374,7 +374,7 @@ Examples:
 
 This information may help when analyzing time-based data.
 
-## Parent Source Code
+#### Parent Source Code
 
 The identifier of the parent geographic region.
 
@@ -433,6 +433,56 @@ Examples:
 </Frame>
 
 Adding alternate names improves matching accuracy.
+
+##### Important Notes About Alternate Names
+
+Only the **“Add Alternate Names”** column is editable.
+
+When adding alternate names:
+
+* Separate multiple values using the `|` (pipe) character.
+* Alternate names are shared across every map that uses the same geographic region.
+* Rows whose GeoName is not linked to a valid geographic region will be rejected with a row-level validation error.
+
+Example:
+
+NYC | New York | New York City
+
+After updating alternate names:
+
+1. Return to the **Maps** page.
+2. Locate the map you updated.
+3. Select **View Region**.
+
+<Frame>
+  <img
+    src="/images/map-view-region.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+4. Choose **Import Excel**.
+
+<Frame>
+  <img
+    src="/images/view-region-im.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+5. Upload the updated Excel file.
+
+<Frame>
+  <img
+    src="/images/update-region.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
+VoxDash will then update the region mappings.
 
 ### Preparing Your Data
 
