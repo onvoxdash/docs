@@ -134,6 +134,7 @@
           {
             "group": "AI Assistant",
             "pages": [
+              "AI-&-Analysis/AI-credits",
               "AI-&-Analysis/AI-Assisted-Data-Chat",
               "AI-&-Analysis/AI-Open-Ended-Analysis"
             ]
