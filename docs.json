@@ -157,6 +157,7 @@
             "pages": [
               "Access-Controls/Dataset-Access-Levels",
               "Access-Controls/Public-Access-Settings",
+              "Access-Controls/Change-public-to-private",
               "Access-Controls/Entity-Level-Access-Control",
               "Access-Controls/Security-&-Permissions",
               "Access-Controls/Request-info",
@@ -180,6 +181,7 @@
               "User-Central/User-Profile-Page",
               "User-Central/Account-Preference",
               "User-Central/Security",
+              "User-Central/Delete-account",
               "User-Central/Data-Profiles-List",
               "User-Central/Followings",
               "User-Central/Organization-Invitations",
