@@ -163,7 +163,8 @@
               "Access-Controls/Request-info",
               "Access-Controls/Managing-Accepted-Fields",
               "Access-Controls/Requesting-Access",
-              "Access-Controls/Request-Management"
+              "Access-Controls/Request-Management",
+              "Access-Controls/claim"
             ]
           },
           {
