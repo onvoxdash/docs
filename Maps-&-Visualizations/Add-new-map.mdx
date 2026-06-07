@@ -1,249 +1,113 @@
 ---
-title: "How to Add a Map in VoxDash"
+title: "Creating and Adding Custom Maps in VoxDash"
 ---
 
-VoxDash includes a library of geographic maps that can be used in dashboards, reports, and data visualizations. If the map you need is not already available, you can add a custom map through the **Data Provider** panel.
+## Overview
 
-VoxDash supports maps created from **GeoJSON** files. You can obtain GeoJSON data from mapping resources such as Highcharts Maps and then import it into VoxDash for use in your projects.
+VoxDash allows users to add custom geographic maps for advanced data visualization and analytics. If the map you need is not available in the default VoxDash map library, you can create and import your own map using GeoJSON data from Highcharts Maps or by building a custom SVG map and converting it into a Highcharts-compatible format.
 
-## Before You Begin
+This guide explains how to:
 
-If the map you need is not available in VoxDash:
+* Find and download existing geographic maps.
+* Import GeoJSON maps into VoxDash.
+* Create custom maps for non-standard regions.
+* Convert SVG maps into interactive Highcharts maps.
+* Use custom maps in VoxDash dashboards and reports.
 
-1. Visit the [Highcharts Maps website - GeoJSON](/https://www.highcharts.com/docs/maps/custom-geojson-maps) and [Highcharts Maps website - Custom Map](/https://www.highcharts.com/docs/maps/create-custom-maps).
-2. Search for the country, region, province, state, district, or custom geographic area you want to use.
-3. Download or copy the corresponding **GeoJSON** file.
-4. Use the GeoJSON data when creating a new map in VoxDash.
-5. Use the using [Highcharts online map converter tool](/https://highcharts.github.io/map-from-svg/) to construct an interactive map with data values. 
+## Option 1: Import an Existing Map from Highcharts
 
-> **Note:** VoxDash uses GeoJSON data to define geographic boundaries and regions. Ensure that your GeoJSON file is valid and properly formatted before importing it.
+### Step 1: Find a Map
 
-## Steps to Add a New Map
+Visit the following Highcharts resources:
 
-### Step 1: Navigate to the Maps Page and Create New Map
+* [Highcharts Maps – GeoJSON Collection](/https://www.highcharts.com/docs/maps/custom-geojson-maps)
+* [Highcharts Maps – Custom Maps](/https://www.highcharts.com/docs/maps/create-custom-maps)
 
-Open the **Data Provider** panel and navigate to the **Maps** section.
-
-The Maps page displays all maps currently available in your VoxDash environment and allows administrators to create, edit, and manage custom maps.
-
-On the Maps page, click the **Add Map** button.
-
-This opens the **Create Map** form, where you can define the map details and upload the geographic data.
-
-<Frame>
-  <img
-    src="/images/map-list.png"
-    alt="add-map"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-### Step 2: Enter a Map Name
-
-Provide a clear and descriptive name for your map.
-
-A meaningful name helps administrators, analysts, and dashboard designers quickly identify the correct map when building reports and visualizations.
-
-<Frame>
-  <img
-    src="/images/map-name.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-#### Examples
-
-✅ **Kenya – Counties**
-
-✅ **South Africa – Provinces**
-
-✅ **United States – Congressional Districts**
-
-❌ **Map 1**
-
-❌ **Test Map**
-
-❌ **New Geography**
-
-> **Best Practice:** Include both the geographic area and the administrative level in the name whenever possible.
-
-### Step 3: Select the Appropriate Region
-
-Choose the geographic region that corresponds to your map.
-
-You can either:
-
-* Search for an existing region using the search box.
-* Select a region from the available list.
-
-<Frame>
-  <img
-    src="/images/map-geo-region.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-Assigning the correct region ensures that:
-
-* The map is categorized properly.
-* Geographic filtering works correctly.
-* Users can navigate through geographic hierarchies in dashboards and reports.
-
-For example, a map showing counties in Kenya should be associated with the **Kenya** region.
-
-### Step 4: Add the GeoJSON Data
-
-In the **GeoJSON** field, paste the GeoJSON code for your map.
-
-<Frame>
-  <img
-    src="/images/map-json.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-GeoJSON is a standard format used to represent geographic features such as:
+Search for the geographic area you want to visualize, such as:
 
 * Countries
 * States or provinces
-* Counties
+* Regions
 * Districts
-* Cities
-* Custom geographic boundaries
+* Counties
+* Sales territories
+* Custom administrative boundaries
 
-The GeoJSON file contains both the geographic shapes and any associated properties required to render the map correctly.
+### Step 2: Download the GeoJSON File
 
-#### Tips
+Once you find the desired map:
 
-* Verify that the GeoJSON is valid before saving.
-* Ensure that region names within the GeoJSON match your intended geography.
-* Large or complex GeoJSON files may take longer to process.
+1. Open the map page.
+2. Download or copy the GeoJSON file.
+3. Verify that the geographic boundaries match your reporting requirements.
 
-> **Important:** Invalid or malformed GeoJSON data may prevent the map from displaying correctly in VoxDash.
+GeoJSON files contain the coordinates and boundaries required to render geographic shapes in VoxDash.
 
-### Step 5: Add a New Region (If Required)
+### Step 3: Add the Map to VoxDash
 
-If the geography you want to use does not exist in the region list, you must first create a new region.
+1. Navigate to **Data Provider**.
+2. Open the **Maps** section.
+3. Click **Add New Map**.
+4. Upload or paste the GeoJSON content.
+5. Enter a name and description for the map.
+6. Save the map.
 
-Click **Add New Region** and complete the required fields.
+Learn more about [Adding new map](https://help.voxdash.com/Maps-&-Visualizations/Map-Overview#steps-to-add-a-new-map)
 
-<Frame>
-  <img
-    src="/images/map-new-region.png"
-    alt="add parent"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
+The map will now be available throughout VoxDash for dashboards, reports, and visual analytics.
 
-#### Define the Region Name
+## Option 2: Create a Custom Map
 
-Enter a clear and accurate name for the region.
+### Step 1: Create a Custom Map
 
-Examples:
+If the required map is not available in the VoxDash map library, you can create your own custom map using Inkscape and the Highcharts Map Converter.
 
-* Nairobi County
-* Westlands District
-* Central Province
-* Greater Accra Region
+#### Requirements
 
-The name should reflect the actual geographic area represented by the map.
+Before you begin, install:
 
-#### Select the Parent Region
+* **Inkscape** (free SVG editor)
+* A reference image (PNG or JPG)
+* Access to the Highcharts Online Map Converter
 
-Every region in VoxDash belongs to a geographic hierarchy.
+### Step 2: Draw the Map
 
-Selecting a parent region ensures that the new region is connected correctly to the existing geographic structure.
+1. Open your reference image in Inkscape.
+2. Select **Draw Bezier Curves and Straight Lines (Shift + F6)**.
+3. Trace each region by drawing a closed shape around its boundaries.
+4. Apply a **solid fill color** to every region (**Fill and Stroke** panel).
+5. Open **Object → Object Properties** and assign:
 
-### Understanding Geographic Hierarchies
+   * **ID** – unique region identifier
+   * **Label** – region name
+6. For neighboring regions, enable **Snap to Path** to ensure borders align correctly.
 
-Regions are typically organized from larger areas to smaller areas.
+#### Special Cases
 
-For example:
+* **Islands:** Group the mainland and islands together (**Object → Group**) and assign a single ID and label.
+* **Enclaves:** Draw the outer region first, reduce its opacity, then draw the enclosed region.
+* **Separator Lines:** Draw lines without a fill color. These will be treated as map separators rather than regions.
 
-| Level                 | Example            |
-| --------------------- | ------------------ |
-| Continent             | Africa             |
-| Country               | Kenya              |
-| Province / State      | Nairobi County     |
-| District / Sub-region | Westlands District |
+### Step 3: Convert the Map
 
-This hierarchy allows VoxDash to:
+1. Save the file as **SVG**.
+2. Open the SVG file in a text editor and copy the SVG markup.
+3. Open the [Highcharts online SVG-to-Map Converter tool](/https://highcharts.github.io/map-from-svg/).
+4. Paste the SVG markup and click **Load**.
+5. Verify the map preview.
+6. Select **View Data** and copy the generated JSON.
 
-* Aggregate data from lower levels to higher levels.
-* Filter dashboards by geographic region.
-* Support drill-down analysis.
-* Display geographic relationships consistently across reports.
+### Step 4: Import the Custom Map into VoxDash
 
-#### Example
+1. Navigate to **Data Provider → Maps**.
+2. Select **Add New Map**.
+3. Paste the generated map JSON.
+4. Provide a map name and description.
+5. Save the map.
 
-If you are adding **Westlands District**, the hierarchy may be:
+The custom map is now available for use across VoxDash.
+Learn more about [Adding new map](https://help.voxdash.com/Maps-&-Visualizations/Map-Overview#steps-to-add-a-new-map)
 
-```
-Africa
-└── Kenya
-    └── Nairobi County
-        └── Westlands District
-```
+## Summary
 
-When users analyze data, they can drill down from Kenya → Nairobi County → Westlands District.
-
-## Add Additional Parent Regions (Optional)
-
-Some geographic entities may belong to multiple parent regions or classifications.
-
-If applicable, add all relevant parent regions to ensure that the geography is correctly connected within the VoxDash hierarchy.
-
-This improves data filtering and reporting flexibility.
-
-### Add a Wikipedia Link (Optional)
-
-If a Wikipedia page exists for the region, you may provide the URL in the **Wikipedia Link** field.
-
-Adding a Wikipedia link gives users quick access to additional information about the geography, including:
-
-* Demographics
-* Administrative structure
-* Historical background
-* Geographic details
-
-<Frame>
-  <img
-    src="/images/add-region.png"
-    alt="add-map"
-    style={{ borderRadius:"0.5rem" }}
-  />
-</Frame>
-
-This step is optional but recommended for widely recognized regions.
-
-# Step 6: Create the Map
-
-After completing all required fields:
-
-1. Review the map name, region selection, and GeoJSON data.
-2. Confirm that the region hierarchy is configured correctly.
-3. Click **Create** in the lower-right corner of the page.
-
-VoxDash will save the map and make it available for use in dashboards, reports, visualizations, and geographic analysis.
-
-## Verifying the Map
-
-After creating the map:
-
-1. Return to the **Maps** page.
-2. Locate the newly created map in the list.
-3. Open the map to confirm that:
-
-   * The boundaries render correctly.
-   * All geographic regions appear as expected.
-   * Region names are displayed properly.
-   * The map is associated with the correct geographic hierarchy.
-
-If any issues are detected, edit the map and verify the GeoJSON data and region configuration.
-
-Learn more about [Map Overview](/Maps-&-Visualizations/Map-Overview), [Map Visualizations](/Maps-&-Visualizations/Map-Visualization-Guide), [ISO Geographic Codes](/Maps-&-Visualizations/ISO-map), [Geography List](/Maps-&-Visualizations/Geo-List), [Geo Page Overview](/Maps-&-Visualizations/Geo-Page-Overview)
-
-By following these steps, you can successfully add custom geographic maps to VoxDash and make them available for advanced geographic reporting and analysis.
+VoxDash supports both pre-built and fully custom maps. Users can either import existing GeoJSON maps from Highcharts or create entirely custom geographic regions using Inkscape and the Highcharts Map Converter. Once imported, these maps can be used to build interactive geographic visualizations, perform regional analysis, and display business metrics directly within VoxDash dashboards.
