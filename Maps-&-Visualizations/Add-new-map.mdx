@@ -14,36 +14,44 @@ This guide explains how to:
 * Convert SVG maps into interactive Highcharts maps.
 * Use custom maps in VoxDash dashboards and reports.
 
-## Option 1: Import an Existing Map from Highcharts
+## Option 1: Import GIS Maps into VoxDash
 
-### Step 1: Find a Map
+If your map data is stored in GIS formats such as **ESRI Shapefile**, **KML**, or other standard mapping formats, you can convert it to **GeoJSON**, which is fully supported by VoxDash and Highcharts Maps.
 
-Visit the following Highcharts resources:
+### Convert GIS Data to GeoJSON
 
-* [Highcharts Maps – GeoJSON Collection](/https://www.highcharts.com/docs/maps/custom-geojson-maps)
-* [Highcharts Maps – Custom Maps](/https://www.highcharts.com/docs/maps/create-custom-maps)
+A GIS editor such as **QGIS** (free and open-source) can be used to:
 
-Search for the geographic area you want to visualize, such as:
+1. Import your map data (Shapefile, KML, etc.).
+2. Select and edit the required geographic areas.
+3. Reproject the map if necessary.
+4. Simplify complex geometries to improve performance.
+5. Review and update map attributes.
+6. Export the final result as a **GeoJSON** file.
 
-* Countries
-* States or provinces
-* Regions
-* Districts
-* Counties
-* Sales territories
-* Custom administrative boundaries
+### Edit Existing Highcharts Maps
 
-### Step 2: Download the GeoJSON File
+The Highcharts Maps Collection is available in:
 
-Once you find the desired map:
+* GeoJSON
+* TopoJSON
+* SVG
 
-1. Open the map page.
-2. Download or copy the GeoJSON file.
-3. Verify that the geographic boundaries match your reporting requirements.
+These files can be modified using compatible editors such as **QGIS**, **Inkscape**, or a text editor before importing them into VoxDash.
 
-GeoJSON files contain the coordinates and boundaries required to render geographic shapes in VoxDash.
+### Import into VoxDash
 
-### Step 3: Add the Map to VoxDash
+1. Export your map as **GeoJSON**.
+2. Go to **Data Provider → Maps** in VoxDash.
+3. Click **Add New Map**.
+4. Upload or paste the GeoJSON content.
+5. Save the map.
+
+> **Tip:** Simplifying map geometry before exporting can significantly improve map rendering performance and dashboard loading times.
+
+For more detailed structure read this document.[Highcharts Maps – GeoJSON Collection](/https://www.highcharts.com/docs/maps/custom-geojson-maps)
+
+### Add the Map to VoxDash
 
 1. Navigate to **Data Provider**.
 2. Open the **Maps** section.
@@ -96,6 +104,8 @@ Before you begin, install:
 4. Paste the SVG markup and click **Load**.
 5. Verify the map preview.
 6. Select **View Data** and copy the generated JSON.
+
+For more detailed structure read this document. [Highcharts Maps – Custom Maps](/https://www.highcharts.com/docs/maps/create-custom-maps)
 
 ### Step 4: Import the Custom Map into VoxDash
 
