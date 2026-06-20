@@ -1,0 +1,50 @@
+---
+title: "Organization Data Exports"
+description: "Download your organization's users, admins, and user groups as Excel files."
+---
+
+From your organization screens you can export three lists to Excel for reporting or
+record-keeping. These are **export-only** — there is no matching import.
+
+<CardGroup cols={3}>
+  <Card title="Users" icon="user" href="/files/import-export/organization_users_sample.xlsx">
+    organization_users_sample.xlsx
+  </Card>
+  <Card title="User groups" icon="user-group" href="/files/import-export/organization_user_groups_sample.xlsx">
+    organization_user_groups_sample.xlsx
+  </Card>
+  <Card title="Admins" icon="user-shield" href="/files/import-export/organization_users_sample.xlsx">
+    Same columns as the Users export.
+  </Card>
+</CardGroup>
+
+## Users / Admins export
+
+Found in **Organization → User management** (and **Admin management**). Click the
+**Export** action to download the current list.
+
+| Column | Description | Example |
+| --- | --- | --- |
+| Salutation | Title / honorific | `Ms` |
+| First Name | Given name | `Grace` |
+| Last Name | Family name | `Hopper` |
+| Email | Email address | `grace@example.com` |
+| Access Type | Their role in the organization | `Editor` |
+| Date Added | When they joined the organization | `2026-01-15` |
+
+## User groups export
+
+Found in **Organization → User groups**. Click **Export**.
+
+| Column | Description | Example |
+| --- | --- | --- |
+| Name | Group name | `Analysts` |
+| Description | What the group is for | `Data analysts group` |
+| Member Count | Number of members | `12` |
+| Date Created | When the group was created | `2026-01-10` |
+
+<Note>
+  Files download with an automatic name like
+  `organization_users_20260620_090807.xlsx`. The columns you see depend on the table's
+  current configuration, so your export may include additional columns.
+</Note>

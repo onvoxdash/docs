@@ -1,0 +1,65 @@
+---
+title: "Map Region Names — Import & Export"
+description: "Export a map's regions and bulk-add alternate names by re-importing the edited file."
+---
+
+Export the regions of a map, add alternate names in Excel, then re-import to attach
+them in bulk. This helps a map match more spellings and local names. Find it on the
+**Maps** screen (Data Provider → Maps).
+
+<Card title="Sample file" icon="file-arrow-down" href="/files/import-export/maps_geonames_sample.xlsx">
+  maps_geonames_sample.xlsx
+</Card>
+
+## Export
+
+<Steps>
+  <Step title="Open the map">
+    Go to **Maps** and open the map you want to enrich.
+  </Step>
+  <Step title="Export regions">
+    Click **Export**. The file lists every region with any names it already has.
+  </Step>
+</Steps>
+
+## Import (add alternate names)
+
+<Steps>
+  <Step title="Add names">
+    In the **Add Alternate Names** column, type the new names. Separate multiple names
+    with a pipe `|`, a semicolon `;`, or a new line.
+  </Step>
+  <Step title="Keep the IDs">
+    Do **not** change **GeoNameId** — it identifies the region.
+  </Step>
+  <Step title="Upload">
+    Click **Import** and choose your file. A summary reports how many regions were
+    updated and lists any skipped rows.
+  </Step>
+</Steps>
+
+## Columns
+
+| Column | Required | Description | Example |
+| --- | --- | --- | --- |
+| GeoNameId | Yes | Identifies the region. Do not change. | `1001` |
+| Region Name | No | The region's name (for your reference). | `Tehran` |
+| Existing Alternate Names | No | Names already attached (export shows these). | `Teheran` |
+| Add Alternate Names | Yes | New names to add, separated by `\|`, `;`, or new line. | `TEH \| Tehran Province` |
+
+## Limits & rules
+
+| Rule | Value |
+| --- | --- |
+| File type | `.xlsx` only (contents verified) |
+| Maximum size | 10 MB |
+| Maximum rows | 50,000 |
+| New names per row | 50 |
+| Total alternate names per region | 200 |
+| Length of one alternate name | 255 characters |
+| Access | Public map: any signed-in user. Private map: Catalog-level access or above. |
+
+<Note>
+  Only rows whose **GeoNameId** belongs to this map are applied; others are reported as
+  skipped. Duplicate or already-present names are ignored.
+</Note>

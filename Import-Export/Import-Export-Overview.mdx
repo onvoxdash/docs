@@ -1,0 +1,57 @@
+---
+title: "Import & Export Overview"
+description: "Download VoxDash data as Excel, and bulk-update it by uploading an edited spreadsheet."
+---
+
+Many VoxDash screens let you **export** a list to an Excel file, and several let you
+**import** an edited spreadsheet back to make bulk changes. This section documents
+each one: what it does, the columns, the limits, and a ready-to-edit sample file.
+
+<Note>
+  Every importer accepts **`.xlsx` only** and verifies the real file contents (not just
+  the file name). Columns are matched by **header name**, so you can reorder columns —
+  but keep the header text exactly as shown on each page. Start from the sample file and
+  you can't go wrong.
+</Note>
+
+<CardGroup cols={2}>
+  <Card title="Survey Questions" icon="list-check" href="/Import-Export/Survey-Questions-Import-Export">
+    Export a survey's questions and answer options, edit the wording, and re-import.
+  </Card>
+  <Card title="Bulk-Invite Users" icon="users" href="/Import-Export/Bulk-Invite-Users">
+    Invite many people to an organization from one spreadsheet.
+  </Card>
+  <Card title="Organization Exports" icon="building" href="/Import-Export/Organization-Data-Exports">
+    Download organization users, admins, and user groups.
+  </Card>
+  <Card title="Map Region Names" icon="map-location-dot" href="/Import-Export/Map-Region-Names-Import-Export">
+    Export a map's regions and bulk-add alternate names.
+  </Card>
+  <Card title="AI Plan Limits" icon="sliders" href="/Import-Export/AI-Plan-Limits-Import">
+    Bulk-configure per-plan AI token limits (admin).
+  </Card>
+  <Card title="AI Daily Cost" icon="coins" href="/Import-Export/AI-Daily-Cost-Export">
+    Export the per-day AI cost report.
+  </Card>
+  <Card title="File-Type Blacklist" icon="ban" href="/Import-Export/File-Type-Blacklist">
+    Export / import the list of blocked upload file types.
+  </Card>
+</CardGroup>
+
+## How exports are named
+
+Exported files are named automatically as `{feature}_{entity}_{date_time}.xlsx`
+(for example `organization_users_20260620_090807.xlsx`). The date-time keeps repeat
+downloads from overwriting each other.
+
+## What "validation" means
+
+When you import a file, VoxDash checks it before changing anything:
+
+- the file is a genuine `.xlsx`,
+- it is within the size limit for that screen,
+- it isn't a malformed or "zip-bomb" workbook,
+- the required column headers are present.
+
+If any check fails, **nothing is changed** and you get an error message. Fix the file
+and try again.

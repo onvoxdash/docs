@@ -1,0 +1,37 @@
+---
+title: "AI Daily Cost — Export"
+description: "Download a per-day report of your organization's AI usage costs as Excel."
+---
+
+Export a day-by-day breakdown of your AI usage costs to Excel. This is **export-only**.
+Find it on the **AI Credits** screen (Data Provider → AI Credits).
+
+<Card title="Sample file" icon="file-arrow-down" href="/files/import-export/openai_daily_cost_sample.xlsx">
+  openai_daily_cost_sample.xlsx
+</Card>
+
+## How to export
+
+<Steps>
+  <Step title="Open AI Credits">
+    Go to **AI Credits** and select the date range you want.
+  </Step>
+  <Step title="Export">
+    Click **Export to Excel** to download the report.
+  </Step>
+</Steps>
+
+## Columns
+
+| Column | Description | Example |
+| --- | --- | --- |
+| Date | The day. | `2026-06-01` |
+| Input Cost | Cost of input tokens that day. | `1.23` |
+| Output Cost | Cost of output tokens that day. | `2.34` |
+| File Cost | Cost of file processing that day. | `0.10` |
+| Total Cost | Sum for the day. | `3.67` |
+
+<Note>
+  Amounts are in your billing currency. The file is named automatically, e.g.
+  `openai_daily_cost_20260620_090807.xlsx`.
+</Note>

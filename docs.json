@@ -107,6 +107,19 @@
             ]
           },
           {
+            "group": "Import & Export",
+            "pages": [
+              "Import-Export/Import-Export-Overview",
+              "Import-Export/Survey-Questions-Import-Export",
+              "Import-Export/Bulk-Invite-Users",
+              "Import-Export/Organization-Data-Exports",
+              "Import-Export/Map-Region-Names-Import-Export",
+              "Import-Export/AI-Plan-Limits-Import",
+              "Import-Export/AI-Daily-Cost-Export",
+              "Import-Export/File-Type-Blacklist"
+            ]
+          },
+          {
             "group": "Maps & Visualization",
             "pages": [
               "Maps-&-Visualizations/Map-Overview",

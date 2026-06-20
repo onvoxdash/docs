@@ -1,0 +1,59 @@
+---
+title: "Bulk-Invite Users"
+description: "Invite many people to your organization at once from a single Excel spreadsheet."
+---
+
+Invite many users to your organization in one step by uploading a spreadsheet of
+names and email addresses. Find this in **Organization → User management**.
+
+<Card title="Sample file" icon="file-arrow-down" href="/files/import-export/organization_user_invites_sample.xlsx">
+  organization_user_invites_sample.xlsx — one row per person.
+</Card>
+
+## How to import
+
+<Steps>
+  <Step title="Fill in the spreadsheet">
+    Download the sample and add one row per person. First name, last name, and email
+    are required.
+  </Step>
+  <Step title="Upload">
+    In **User management**, choose **Bulk invite / Import** and select your file.
+  </Step>
+  <Step title="Review the preview">
+    A preview table lists the people found in your file. Untick anyone you don't want
+    to invite.
+  </Step>
+  <Step title="Confirm">
+    Confirm to create the selected accounts and send their invitation emails.
+  </Step>
+</Steps>
+
+## Columns
+
+| Column | Required | Description | Example |
+| --- | --- | --- | --- |
+| Salutation | No | Title / honorific. | `Ms` |
+| First name | Yes | Given name. | `Ada` |
+| Last name | Yes | Family name. | `Lovelace` |
+| Email | Yes | Login + invitation address. Must be unique. | `ada@example.com` |
+
+<Note>
+  Header matching is flexible for names: `First name`, `FirstName`, and `First Name`
+  are all accepted (same for last name and email).
+</Note>
+
+## Limits & rules
+
+| Rule | Value |
+| --- | --- |
+| File type | `.xlsx` only (contents verified) |
+| Maximum size | 10 MB |
+
+## Troubleshooting
+
+| Problem | What it means |
+| --- | --- |
+| The preview is empty | No data rows, or the columns couldn't be read. Start from the sample. |
+| Someone wasn't created | Their email already exists, or that row had no valid email. |
+| Invalid file | Not a real `.xlsx`, empty, or too large. |
