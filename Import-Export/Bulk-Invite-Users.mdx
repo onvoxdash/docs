@@ -29,14 +29,34 @@ names and email addresses. Find this in **Organization → User management**.
   </Step>
 </Steps>
 
+<Frame>
+  <img
+    src="/images/user-management-add.png"
+    alt="user Management"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
 ## Columns
 
-| Column | Required | Description | Example |
-| --- | --- | --- | --- |
-| Salutation | No | Title / honorific. | `Ms` |
-| First name | Yes | Given name. | `Ada` |
-| Last name | Yes | Family name. | `Lovelace` |
-| Email | Yes | Login + invitation address. Must be unique. | `ada@example.com` |
+| Column         | Required | Description                                                                            | Example                |
+| -------------- | -------- | -------------------------------------------------------------------------------------- | ---------------------- |
+| Salutation     | No       | Title / honorific.                                                                     | `Ms`                   |
+| First name     | Yes      | Given name.                                                                            | `Ada`                  |
+| Last name      | Yes      | Family name.                                                                           | `Lovelace`             |
+| Email          | Yes      | Login + invitation address. Must be unique.                                            | `ada@example.com`      |
+| EmailConfirmed | No       | Indicates whether the user’s email address has been verified/confirmed. Boolean value. | `true`                 |
+| AccessType     | Yes      | Defines the user’s access level or role in the system.                                 | `Admin`                |
+| CreatedDate    | Yes      | Date and time when the user account was created. Use standard date format.             | `2026-06-20T10:30:00Z` |
+| IsEmailDomain  | No       | Indicates whether the email belongs to an approved/organization domain. Boolean value. | `false`                |
+
+<Frame>
+  <img
+    src="/images/user-import.png"
+    alt="user Management"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
 
 <Note>
   Header matching is flexible for names: `First name`, `FirstName`, and `First Name`
