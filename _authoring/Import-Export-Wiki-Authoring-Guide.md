@@ -37,8 +37,14 @@ files/import-export/openai_plan_limits_sample.xlsx
 files/import-export/organization_extension_blacklist_sample.xlsx
 ```
 
-Each page already links to its sample with a download card, so the links work as soon
-as the pages go live.
+Each page links to its sample with a download card.
+
+> **Important — why the download links use a GitHub URL.** Mintlify serves pages and
+> images, but it does **not** serve `.xlsx` files as static downloads (they return
+> 404). So each download card points to the file's GitHub *raw* URL in this repo:
+> `https://raw.githubusercontent.com/onvoxdash/docs/main/files/import-export/<file>.xlsx`.
+> The `.xlsx` files still live in `files/import-export/` — keep them there (on the
+> `main` branch) so the raw links resolve.
 
 ---
 
@@ -127,8 +133,9 @@ description: "<one sentence>"
 The sample files come from the backend repo at
 `voxdash-dotnetcore/docs/import_export_samples/`. If a feature's columns change, a
 developer regenerates them with `dotnet run --project ImportExportSampleGenerator` and
-you copy the new `.xlsx` over the ones in `files/import-export/`. The file names stay
-the same, so the page links don't change.
+you copy the new `.xlsx` over the ones in `files/import-export/`, then commit and push
+to `main`. The file names stay the same and the download links point at the GitHub raw
+URL on `main`, so replacing the file is all that's needed — no page edit.
 
 ---
 
