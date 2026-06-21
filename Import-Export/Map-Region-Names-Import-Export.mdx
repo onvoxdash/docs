@@ -22,6 +22,14 @@ them in bulk. This helps a map match more spellings and local names. Find it on 
   </Step>
 </Steps>
 
+<Frame>
+  <img
+    src="/images/view-region-export.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+
 ## Import (add alternate names)
 
 <Steps>
@@ -40,12 +48,43 @@ them in bulk. This helps a map match more spellings and local names. Find it on 
 
 ## Columns
 
-| Column | Required | Description | Example |
-| --- | --- | --- | --- |
-| GeoNameId | Yes | Identifies the region. Do not change. | `1001` |
-| Region Name | No | The region's name (for your reference). | `Tehran` |
-| Existing Alternate Names | No | Names already attached (export shows these). | `Teheran` |
-| Add Alternate Names | Yes | New names to add, separated by `\|`, `;`, or new line. | `TEH \| Tehran Province` |
+| Column                   | Required | Description                                                                           | Example                       |
+| ------------------------ | -------- | ------------------------------------------------------------------------------------- | ----------------------------- |
+| GeoNameId                | Yes       | Identifies the region. Do not change.                                                 | `2643743`                     |
+| Region Name              | Yes       | The region’s name (for your reference).                                               | `London`                      |
+| Existing Alternate Names | Yes       | Names already attached (export shows these).                                          | `Greater London`              |
+| ISO 3166-1 alpha-2       | Yes       | Two-letter country code based on ISO 3166-1 standard.                                 | `GB`                          |
+| ISO 3166-1 alpha-3       | Yes       | Three-letter country code based on ISO 3166-1 standard.                               | `GBR`                         |
+| ISO 3166-1 numeric       | Yes       | Numeric country code based on ISO 3166-1 standard.                                    | `826`                         |
+| ISO 3166-2               | Yes       | Regional subdivision code based on ISO 3166-2 standard.                               | `GB-LND`                      |
+| UN M.49                  | Yes       | United Nations geographic region numeric code.                                        | `826`                         |
+| GeoNames ID              | Yes       | Unique identifier from the GeoNames geographic database.                              | `2643743`                     |
+| Source Provider          | Yes       | Name of the external provider supplying the geographic data.                          | `GeoNames`                    |
+| Source Code              | Yes       | Internal or provider-specific code identifying the region.                            | `GB-LON`                      |
+| Admission Category       | Yes       | Classification level of the geographic entity (country, state, city, district, etc.). | `City`                        |
+| Feature Code             | Yes       | Geographic feature classification code.                                               | `PPLC`                        |
+| Latitude                 | Yes       | Geographic latitude coordinate in decimal degrees.                                    | `51.5074`                     |
+| Longitude                | Yes       | Geographic longitude coordinate in decimal degrees.                                   | `-0.1278`                     |
+| Population               | Yes       | Estimated population count for the region.                                            | `8982000`                     |
+| Timezone                 | Yes       | Standard timezone associated with the region.                                         | `Europe/London`               |
+| Parent Source Code       | Yes       | Source code of the parent geographic entity in the hierarchy.                         | `GB`                          |
+| Existing Alternate Names | Yes       | Names already attached to this region from previous imports or system records.        | `Greater London, Londinium`   |
+| Add Alternate Names      | Yes      | Additional alternative names to append, separated by `\|`, `;`, or new line.          | `London UK \| City of London` |
+
+<Frame>
+  <img
+    src="/images/region-export1.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame>
+<Frame>
+  <img
+    src="/images/region-export2.png"
+    alt="add-map"
+    style={{ borderRadius:"0.5rem" }}
+  />
+</Frame> 
 
 ## Limits & rules
 
